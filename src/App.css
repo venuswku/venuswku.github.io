@@ -1,13 +1,13 @@
-.App {
-  text-align: center;
-  font-family: Rubik, sans-serif;
-  display: 'flex';
-  color: 'white';
-  min-height: 100vh;
-}
-
-.space {
-  height: 8%;
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
 }
 
 .title {
@@ -18,19 +18,19 @@
   text-shadow: 1px 1px 50px #000000;
 }
 
-.Home {
+.home {
   height: 100%;
 }
 
-.About {
+.about {
   height: 100%;
 }
 
-.Projects {
+.projects {
   height: 100%;
 }
 
-.Contact {
+.contact {
   height: 100%;
 }
 

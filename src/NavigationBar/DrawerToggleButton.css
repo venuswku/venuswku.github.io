@@ -1,0 +1,23 @@
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    width: 30px;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box; /* keeps button lines inside toggle button's width and height restraints */
+    margin-left: 20px;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.button-line {
+    width: 25px;    /* 100% doesn't work because button-line are divs inside toggle-button div */
+    height: 2px;
+    background: white;
+    box-shadow: 1px 1px 3px #000000;
+}

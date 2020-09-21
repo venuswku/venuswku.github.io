@@ -9,8 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 function Contact() {
     // const classes = useStyles();
     return (
-        <div className="Contact">
-            <div className="space"></div>
+        <div className="contact">
             <p className="title">Contact Info</p>
         </div>
     );

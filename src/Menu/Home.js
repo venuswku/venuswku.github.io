@@ -16,8 +16,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
     const classes = useStyles();
     return (
-        <div className="Home">
-            <div className="space"></div>
+        <div className="home">
             <p className="title">Welcome!</p>
             <SentimentSatisfiedRounded className={classes.smileIcon}/>
             <div style={{ background: '#715AFF' }}>

@@ -1,22 +1,35 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
+import React, {useState} from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 // import ReactPlayer from 'react-player';
-// import NavBar from './NavBar/NavBar';
 import NavigationBar from './NavigationBar/NavigationBar';
+import MenuDrawer from './NavigationBar/MenuDrawer';
+import Backdrop from './NavigationBar/Backdrop';
 import Home from './Menu/Home';
 import About from './Menu/About';
 import Projects from './Menu/Projects';
 import Contact from './Menu/Contact';
 
 export default function App() {
+  let backdrop;
+  
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const showDrawer = () => setDrawerOpen(!drawerOpen);
+  const backdropClickHandler = () => setDrawerOpen(false);
+
+  if (drawerOpen) {
+    backdrop = <Backdrop click={backdropClickHandler} />
+  }
+  
   return (
-    <div className="App">
+    <div style={{height: '100%'}}>
       <Router>
-        <NavigationBar />
+        <NavigationBar drawerButtonClickHandler={showDrawer} />
+        <MenuDrawer show={drawerOpen} />
+        {backdrop}
         <Switch>
-          <Route exact path="/" component={withRouter(Home)} />
-          <Route exact path="/about" component={withRouter(About)} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />          
         </Switch>

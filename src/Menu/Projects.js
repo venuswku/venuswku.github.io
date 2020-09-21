@@ -9,8 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 function Projects() {
     // const classes = useStyles();
     return (
-        <div className="Projects">
-            <div className="space"></div>
+        <div className="projects">
             <p className="title">Projects</p>
         </div>
     );

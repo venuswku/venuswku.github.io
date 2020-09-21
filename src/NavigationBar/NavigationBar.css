@@ -1,0 +1,44 @@
+.logo {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.space {
+    flex: 1;
+}
+
+.navbar-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-items li {
+    padding: 0 20px;    /* adds space between navbar links */
+}
+
+/* when NavLink isn't clicked */
+.navbar-items a {
+    color: rgb(187, 185, 185);
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.navbar-items a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-items {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+}
