@@ -21,3 +21,9 @@
     background: white;
     box-shadow: 1px 1px 3px #000000;
 }
+
+@media (max-width: 512px) {
+    .toggle-button {
+        margin-right: 20px;
+    }
+}

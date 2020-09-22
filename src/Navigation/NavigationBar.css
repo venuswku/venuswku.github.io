@@ -1,8 +1,12 @@
 .logo {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px;
     text-shadow: 1px 1px 5px #000000;
+}
+
+.mobile-space {
+    flex: 1;
 }
 
 .space {
@@ -31,14 +35,28 @@
     color: white;
 }
 
+/* when display screen is less than 512 pixels wide, then align logo (name) to left */
+@media (max-width: 512px) {
+    .mobile-space,
+    .space {
+        display: none;
+    }
+}
+
+/* when display screen is between 512 and 768 pixels wide, then center logo (name) */
 @media (max-width: 768px) {
+    .logo {
+        margin-left: 0px;
+    }
     .navbar-items {
         display: none;
     }
 }
 
+/* when display screen is larger or equal to 769 pixels wide, don't display menu button */
 @media (min-width: 769px) {
-    .menu-button {
+    .menu-button,
+    .mobile-space {
         display: none;
     }
 }

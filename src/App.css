@@ -11,11 +11,11 @@
 }
 
 .title {
-  color: #55C1FF;
+  color: #480355;
   font-size: 50px;
   text-align: left;
   margin-left: 50px;
-  text-shadow: 1px 1px 50px #000000;
+  /* text-shadow: 1px 1px 5px #000000; */
 }
 
 .home {

@@ -6,9 +6,10 @@ import { NavLink } from "react-router-dom";
 
 const NavigationBar = props => (
       <div className="navigation-bar">
-          <div className="menu-button">
-              <DrawerToggleButton click={props.drawerButtonClickHandler} />
-          </div>
+        <div className="menu-button">
+            <DrawerToggleButton click={props.drawerButtonClickHandler} />
+        </div>
+        <div className="mobile-space"></div>
         <a href="/" className="logo">
             <Typography variant="h4">Venus Ku</Typography>
         </a>

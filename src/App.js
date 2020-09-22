@@ -2,30 +2,32 @@ import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 // import ReactPlayer from 'react-player';
-import NavigationBar from './NavigationBar/NavigationBar';
-import MenuDrawer from './NavigationBar/MenuDrawer';
-import Backdrop from './NavigationBar/Backdrop';
-import Home from './Menu/Home';
-import About from './Menu/About';
-import Projects from './Menu/Projects';
-import Contact from './Menu/Contact';
+import ScrollToTop from './Navigation/ScrollToTop';
+import NavigationBar from './Navigation/NavigationBar';
+import MenuDrawer from './Navigation/MenuDrawer';
+import Backdrop from './Navigation/Backdrop';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 
 export default function App() {
   let backdrop;
   
   const [drawerOpen, setDrawerOpen] = useState(false);
   const showDrawer = () => setDrawerOpen(!drawerOpen);
-  const backdropClickHandler = () => setDrawerOpen(false);
+  const closeDrawerClickHandler = () => setDrawerOpen(false);
 
   if (drawerOpen) {
-    backdrop = <Backdrop click={backdropClickHandler} />
+    backdrop = <Backdrop click={closeDrawerClickHandler} />
   }
   
   return (
     <div style={{height: '100%'}}>
       <Router>
+        <ScrollToTop />
         <NavigationBar drawerButtonClickHandler={showDrawer} />
-        <MenuDrawer show={drawerOpen} />
+        <MenuDrawer show={drawerOpen} close={closeDrawerClickHandler} />
         {backdrop}
         <Switch>
           <Route exact path="/" component={Home} />

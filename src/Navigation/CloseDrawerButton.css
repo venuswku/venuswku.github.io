@@ -1,0 +1,14 @@
+.close-button {
+    background: transparent;
+    /* padding: 0px 0px 0px 5px; */
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover > * {
+    color: white !important;
+}
+
+.close-button:focus {
+    outline: none;  /* remove outline of button when clicked */
+}

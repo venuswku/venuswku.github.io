@@ -1,23 +1,16 @@
-
-
 .drawer {
-    /* margin-top: 65px; */
-    width: 50%;
+    width: 40%;
     max-width: 300px;
     height: 100%;
-    background: rgb(26, 25, 25);
+    background: rgba(26, 25, 25, 0.95);
     box-shadow: 13px 0px 25px -2px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 200;
-    transform: translateX(-100%);   /* drawer is positioned all the way to left / not on screen */
+    padding: 15px 10% 0px 15px;
+    transform: translateX(-110%);   /* drawer is positioned all the way to left / not on screen */
     transition: transform 0.3s ease-out;  /* animates drawer when tranform property changes, animates for 0.3 seconds, ease-out = start animation fast and end it slowly */
-}
-
-.close-button {
-    color: white;
-    top: 0;
 }
 
 /* for elements with both 'drawer' and 'open' classes ... */
@@ -26,30 +19,50 @@
 }
 
 .drawer ul {
+    width: 90%;
+    /* background-color: teal; */
     height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    padding: 10px 0px;
-}
+    /* justify-content: center; */}
 
 .drawer a {
+    width: 100%;
     color: rgba(255, 255, 255, 0.31);
+    /* background-color: tomato; */
     text-decoration: none;
     font-size: 25px;
+    /* make name and icon of page align on the center axis */
+    display: flex;
+    align-items: center;
+    margin: 10% 0% 10% 0%;
 }
 
 .drawer a:hover {
     color: white;
 }
 
-.menu-drawer-icons {
-    margin: 0 1.5rem;
-}
-
 @media (min-width: 769px) {
     .drawer {
         display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .drawer a {
+        margin: 10% 0% 10% -15%;
+    }
+}
+
+@media (max-width: 375px) {
+    .drawer a {
+        margin: 10% 0% 10% -20%;
+    }
+}
+
+@media (max-width: 320px) {
+    .drawer a {
+        margin: 10% 0% 10% -30%;
     }
 }
