@@ -2,13 +2,17 @@
 
 /* Extra Fonts: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' */
 html {
+  width: 100%;
   height: 100%;
 }
 
 body {
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
   background-color: #7699D4;
   font-family: -apple-system, BlinkMacSystemFont, 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;

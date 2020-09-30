@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './About.css';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,10 +25,9 @@ function About() {
     const classes = useStyles();
     return (
         <div className="about">
-            <p className="title">About Me</p>
+            <p className="title">About</p>
             <div className={classes.purpleBackground} style={{ fontSize:23 }}>
-                <p>Hello, it's Venus! I'm a third-year undergraduate student studying Computer Science at the University of California in Santa Cruz.</p>
-                <p>I have a passion for ... </p>
+                <p>Education</p>
             </div>
             <p className="title">Resume</p>
             <div className={classes.blueBackground}>

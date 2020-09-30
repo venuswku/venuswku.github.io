@@ -22,12 +22,12 @@ const MenuDrawer = props => {
 
     return (
         <nav className={drawerClasses.join(' ')}>
-            <CloseDrawerButton click={props.close} />
+            <CloseDrawerButton click={props.closeDrawerClickHandler} />
             <ul>    
-                <li><NavLink exact to="/" activeStyle={{color: 'white'}} onClick={props.close}><HomeRounded className={classes.pageIcons} />Home</NavLink></li>
-                <li><NavLink to="/about" activeStyle={{color: 'white'}} onClick={props.close}><AccountCircleRounded className={classes.pageIcons} />About</NavLink></li>
-                <li><NavLink to="/projects" activeStyle={{color: 'white'}} onClick={props.close}><FolderRounded className={classes.pageIcons} />Projects</NavLink></li>
-                <li><NavLink to="/contact" activeStyle={{color: 'white'}} onClick={props.close}><ContactMailRounded className={classes.pageIcons} />Contact</NavLink></li>
+                <li><NavLink exact to="/" activeStyle={{color: 'white'}} onClick={props.closeDrawerClickHandler}><HomeRounded className={classes.pageIcons} />Home</NavLink></li>
+                <li><NavLink to="/about" activeStyle={{color: 'white'}} onClick={props.closeDrawerClickHandler}><AccountCircleRounded className={classes.pageIcons} />About</NavLink></li>
+                <li><NavLink to="/projects" activeStyle={{color: 'white'}} onClick={props.closeDrawerClickHandler}><FolderRounded className={classes.pageIcons} />Projects</NavLink></li>
+                <li><NavLink to="/contact" activeStyle={{color: 'white'}} onClick={props.closeDrawerClickHandler}><ContactMailRounded className={classes.pageIcons} />Contact</NavLink></li>
             </ul>
         </nav>
     );

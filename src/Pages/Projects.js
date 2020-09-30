@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Projects.css';
 import { makeStyles } from '@material-ui/core/styles';
 
 // const useStyles = makeStyles((theme) => ({

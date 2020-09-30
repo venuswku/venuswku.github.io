@@ -1,0 +1,15 @@
+.home {
+    height: 100%;
+    padding-top: 115px;
+    /* background-color: #7699D4; */
+}
+
+.title {
+    color: #480355;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;    /* make text and icon in center of title flexbox */
+    align-items: center;    /* make main axis of text and icon align in center */
+    /* margin: 0 0 0 50px; */
+    /* text-shadow: 1px 1px 5px #000000; */
+}

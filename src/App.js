@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import './App.css';
 // import ReactPlayer from 'react-player';
 import ScrollToTop from './Navigation/ScrollToTop';
 import NavigationBar from './Navigation/NavigationBar';
 import MenuDrawer from './Navigation/MenuDrawer';
 import Backdrop from './Navigation/Backdrop';
+import Canvas from './Canvas/Canvas';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
@@ -16,10 +16,27 @@ export default function App() {
   
   const [drawerOpen, setDrawerOpen] = useState(false);
   const showDrawer = () => setDrawerOpen(!drawerOpen);
-  const closeDrawerClickHandler = () => setDrawerOpen(false);
 
+  // close drawer
+  const closeDrawer = () => setDrawerOpen(false);
+
+  // close drawer when backdrop is clicked
   if (drawerOpen) {
-    backdrop = <Backdrop click={closeDrawerClickHandler} />
+    backdrop = <Backdrop click={closeDrawer} />
+  }
+
+  // water wave
+  const draw = (ctx, frameCount) => {
+    const { width, height } = ctx.canvas.getBoundingClientRect()
+    if (ctx.canvas.width !== width || ctx.canvas.height !== height) {
+      ctx.canvas.width = width;
+      ctx.canvas.height = height;
+    }
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.arc(50, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI);
+    ctx.fill();
   }
   
   return (
@@ -27,7 +44,7 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <NavigationBar drawerButtonClickHandler={showDrawer} />
-        <MenuDrawer show={drawerOpen} close={closeDrawerClickHandler} />
+        <MenuDrawer show={drawerOpen} closeDrawerClickHandler={closeDrawer} />
         {backdrop}
         <Switch>
           <Route exact path="/" component={Home} />
@@ -36,6 +53,7 @@ export default function App() {
           <Route path="/contact" component={Contact} />          
         </Switch>
       </Router>
+      <Canvas draw={draw} />
       {/* <header className="App-header">
         <p>
           Welcome to Venus' website!
