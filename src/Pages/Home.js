@@ -14,6 +14,9 @@ function Home() {
     const classes = useStyles();
     return (
         <div className="home">
+            <div className="cloud cloud1"></div>
+            <div className="cloud cloud2"></div>
+            <div className="cloud cloud3"></div>
             <div className="title">Welcome!<SentimentSatisfiedRounded className={classes.smileIcon}/></div>
             <div className="intro">
                 <p>Hello, I'm Venus! I'm a third-year undergraduate student studying Computer Science at the University of California in Santa Cruz.</p>
