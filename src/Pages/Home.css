@@ -2,6 +2,8 @@
     padding-top: 115px;
     background-color: #7698d4;
     overflow-x: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
+    position: relative;
+    z-index: -2;
 }
 
 /* base of cloud */
@@ -10,10 +12,10 @@
     height: 100px;
     border-radius: 50px;
     position: relative;
-    top: 0;
     background: #fff;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.05);
     opacity: 50%;
+    z-index: -1;
 }
 /* left clump of cloud */
 .cloud:before {
@@ -64,7 +66,7 @@
     100% {margin-left: 100%;}
 }
 
-.title {
+.home-title {
     color: #480355;
     font-size: 50px;
     display: flex;
@@ -72,21 +74,22 @@
     align-items: center;    /* make main axis of text and icon align in center */
     /* margin: 0 0 0 50px; */
     /* text-shadow: 1px 1px 5px #000000; */
+    margin-top: -300px;
+    z-index: 0;
 }
 
 .intro {
     background: #715AFF;
+    z-index: 0;
 }
 
 .wave-background {
     width: 100%;
     height: 250px;
-    position: relative;
     bottom: 20%;
     background: transparent;
 }
 .wave {
-    
     height: 100%;
     background: rgb(49, 49, 218);
     animation: animateWave 5s ease-in-out infinite;
