@@ -1,4 +1,5 @@
 .home {
+    height: 100vh;
     padding-top: 115px;
     background-color: #7698d4;
     overflow-x: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
@@ -43,38 +44,45 @@
 .cloud1 {
     transform: scale(0.5);
     opacity: 25%;
-    animation: animateCloud1 40s linear infinite;
+    animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
 }
-@keyframes animateCloud1 {
-    0% {margin-left: -20%;}
-    100% {margin-left: 100%;}
+@keyframes animateCloud1Initial {
+    0% {left: 60%}
+    100% {left: 100%}
+}
+@keyframes animateCloud1Loop {
+    0% {left: -30%}
+    100% {left: 100%}
 }
 .cloud2 {
     transform: scale(0.75);
     opacity: 38%;
-    animation: animateCloud2 60s linear infinite;
+    animation: animateCloud2 70s linear infinite;
 }
 @keyframes animateCloud2 {
-    0% {margin-left: -200%;}
+    0% {margin-left: -50%;}
     100% {margin-left: 100%;}
 }
 .cloud3 {
-    animation: animateCloud3 50s linear infinite;
+    animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 60s linear infinite 45s;
 }
-@keyframes animateCloud3 {
+@keyframes animateCloud3Initial {
+    0% {margin-left: 10%;}
+    100% {margin-left: 150%;}
+}
+@keyframes animateCloud3Loop {
     0% {margin-left: -100%;}
-    100% {margin-left: 100%;}
+    100% {margin-left: 150%;}
 }
 
 .home-title {
     color: #480355;
-    font-size: 50px;
+    font-size: 100px;
     display: flex;
     justify-content: center;    /* make text and icon in center of title flexbox */
     align-items: center;    /* make main axis of text and icon align in center */
-    /* margin: 0 0 0 50px; */
     /* text-shadow: 1px 1px 5px #000000; */
-    margin-top: -300px;
+    margin-top: -250px;
     z-index: 0;
 }
 
@@ -86,6 +94,7 @@
 .wave-background {
     width: 100%;
     height: 250px;
+    position: absolute;
     bottom: 20%;
     background: transparent;
 }
