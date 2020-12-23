@@ -24,9 +24,10 @@ function Home() {
                 I have a passion for creating meaningful projects that can benefit people in any way possible.
             </div>
             <div className="wave-background">
+                Dive in to explore more about me!
                 <div className="wave"></div>
                 <div className="website-guide">
-                    {/* put navigation & brief details about each website section here */}
+                    put navigation and brief details about each website section here
                 </div>
             </div>
             
