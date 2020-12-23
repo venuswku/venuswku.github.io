@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Home() {
     const classes = useStyles();
+    const oceanRef = React.createRef();
+    const scrollToOcean = () => oceanRef.current.scrollIntoView({behavior: 'smooth'});
     return (
         <div className="home">
             <div className="cloud cloud1"></div>
@@ -24,10 +26,13 @@ function Home() {
                 I have a passion for creating meaningful projects that can benefit people in any way possible.
             </div>
             <div className="wave-background">
-                Dive in to explore more about me!
+                <button onClick={scrollToOcean}>Dive in to explore more about me!</button>
                 <div className="wave"></div>
-                <div className="website-guide">
+                <div className="website-guide" ref={oceanRef}>
                     put navigation and brief details about each website section here
+                    About
+                    Projects
+                    Contact
                 </div>
             </div>
             
