@@ -19,12 +19,17 @@ function Home() {
             <div className="cloud cloud3"></div>
             <div className="home-title">Welcome!<SentimentSatisfiedRounded className={classes.smileIcon}/></div>
             <div className="intro">
-                <p>Hello, I'm Venus! I'm a third-year undergraduate student studying Computer Science at the University of California in Santa Cruz.</p>
-                <p>I have a passion for applying what I've learned to create projects that can benefit people in any way possible. </p>
+                Hello! I'm Venus, a third-year undergraduate student studying Computer Science at the University of California in Santa Cruz.
+                <br/>
+                I have a passion for creating meaningful projects that can benefit people in any way possible.
             </div>
             <div className="wave-background">
                 <div className="wave"></div>
+                <div className="website-guide">
+                    {/* put navigation & brief details about each website section here */}
+                </div>
             </div>
+            
         </div>
     );
 }

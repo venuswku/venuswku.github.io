@@ -1,9 +1,10 @@
 .home {
-    height: 100vh;
+    height: 100%;
     padding-top: 115px;
     background-color: #7698d4;
-    overflow-x: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
+    overflow: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
     position: relative;
+    text-align: center;
     z-index: -2;
 }
 
@@ -64,7 +65,7 @@
     100% {margin-left: 100%;}
 }
 .cloud3 {
-    animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 60s linear infinite 45s;
+    animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
 }
 @keyframes animateCloud3Initial {
     0% {margin-left: 10%;}
@@ -83,23 +84,30 @@
     align-items: center;    /* make main axis of text and icon align in center */
     /* text-shadow: 1px 1px 5px #000000; */
     margin-top: -250px;
+    margin-bottom: 5%;
     z-index: 0;
 }
 
 .intro {
+    display: inline-block;
     background: #715AFF;
+    padding: 20px;
+    border-radius: 20px;
     z-index: 0;
 }
 
 .wave-background {
     width: 100%;
-    height: 250px;
+    /* height: 250px;
     position: absolute;
-    bottom: 20%;
+    bottom: 20%; */
+    position: relative;
+    top: 20%;
     background: transparent;
 }
 .wave {
-    height: 100%;
+    height: 250px;
+    /* height: 100%; */
     background: rgb(49, 49, 218);
     animation: animateWave 5s ease-in-out infinite;
 }
@@ -110,4 +118,13 @@
     50% {
         clip-path: polygon(0 78%, 12% 85%, 23% 90%, 32% 91%, 49% 86%, 67% 79%, 83% 77%, 100% 79%, 100% 100%, 0% 100%);
     }
+}
+
+.website-guide {
+    height: 100%;
+    /* background: rgba(21,59,128);
+    background: linear-gradient(0deg, rgba(21,59,128,1) 0%, rgba(30,127,173,1) 73%); */
+    /* background: rgba(129, 208, 255, 1.0);
+    background: linear-gradient(to bottom, rgba(129, 208, 255, 1.0), rgba(1, 18, 124, 1.0)); */
+    /* position: relative; */
 }
