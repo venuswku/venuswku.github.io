@@ -5,7 +5,6 @@
     overflow: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
     position: relative;
     text-align: center;
-    /* z-index: -2; */
 }
 
 /* base of cloud */
@@ -84,6 +83,7 @@
     align-items: center;    /* make main axis of text and icon align in center */
     /* text-shadow: 1px 1px 5px #000000; */
     margin-top: -250px;
+    position: relative;
     z-index: 1;
 }
 
@@ -93,6 +93,7 @@
     padding: 20px;
     border-radius: 20px;
     margin: 3% 0 5%;
+    position: relative;
     z-index: 1;
 }
 
@@ -100,19 +101,12 @@
     width: 100%;
     color: rgba(255, 255, 255, 0.755);
     background: transparent;
-    position: relative;
 }
 .dive {
     cursor: pointer;
-    /* pointer-events: auto; */
-    position: relative;
-    z-index: 1;
-    /* margin-top: -500px;
-    margin-left: -1500px; */
 }
 .wave {
     height: 250px;
-    /* height: 100%; */
     background: rgb(49, 49, 218);
     margin-top: -10%;
     animation: animateWave 5s ease-in-out infinite;
