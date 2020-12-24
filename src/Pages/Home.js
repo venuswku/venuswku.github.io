@@ -29,11 +29,19 @@ const Home = () => {
             <div className="wave-background">
                 <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
                 <div className="wave"></div>
-                <div className="website-guide" ref={oceanRef}>
-                    put navigation and brief details about each website section here
-                    About
-                    Projects
-                    Contact
+                <div className="website-guide">
+                    <div className="website-section" ref={oceanRef}>
+                        About
+                        <p className="section-description">My education, work experience, and skills. Downloadable resume is provided at the bottom of this About section.</p>
+                    </div>
+                    <div className="website-section">
+                        Projects
+                        <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>
+                    </div>
+                    <div className="website-section">
+                        Contact
+                        <p className="section-description">How to contact me.</p>
+                    </div>
                 </div>
             </div>
         </div>

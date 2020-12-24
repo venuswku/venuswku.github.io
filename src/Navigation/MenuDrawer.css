@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 102;
     padding: 15px 10% 0px 15px;
     transform: translateX(-110%);   /* drawer is positioned all the way to left / not on screen */
     transition: transform 0.3s ease-out;  /* animates drawer when tranform property changes, animates for 0.3 seconds, ease-out = start animation fast and end it slowly */

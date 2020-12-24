@@ -110,6 +110,7 @@
     background: rgb(49, 49, 218);
     margin-top: -10%;
     animation: animateWave 5s ease-in-out infinite;
+    z-index: 0;     /* by default when transform is used */
 }
 @keyframes animateWave {
     0%, 100% {
@@ -121,6 +122,19 @@
 }
 
 .website-guide {
+    width: 100%;
     background: rgb(0,5,126);
     background: linear-gradient(0deg, rgba(0,5,126,1) 0%, rgba(49,49,218,1) 100%);
+    padding: 1% 5% 5% 5%;
+}
+.website-section {
+    cursor: pointer;
+    margin-top: 7%;
+    display: flex;
+}
+.section-description {
+    width: 50%;
+    text-align: center;
+    padding: 0 5%;
+    justify-self: right;
 }
