@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { SentimentSatisfiedRounded } from '@material-ui/icons';
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     smileIcon: {
@@ -30,18 +31,18 @@ const Home = () => {
                 <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
                 <div className="wave"></div>
                 <div className="website-guide">
-                    <div className="website-section" ref={oceanRef}>
-                        About
-                        <p className="section-description">My education, work experience, and skills. Downloadable resume is provided at the bottom of this About section.</p>
-                    </div>
-                    <div className="website-section">
-                        Projects
+                    <NavLink exact to="/about" className="website-section" ref={oceanRef}>
+                        <div className="section-name">About</div>
+                        <p className="section-description">My education, work experience, and skills. Downloadable resume is provided at the bottom of this section.</p>
+                    </NavLink>
+                    <NavLink exact to="/projects" className="website-section">
+                        <div className="section-name">Projects</div>
                         <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>
-                    </div>
-                    <div className="website-section">
-                        Contact
+                    </NavLink>
+                    <NavLink exact to="/contact" className="website-section">
+                        <div className="section-name">Contact</div>
                         <p className="section-description">How to contact me.</p>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </div>

@@ -99,10 +99,10 @@
 
 .wave-background {
     width: 100%;
-    color: rgba(255, 255, 255, 0.755);
     background: transparent;
 }
 .dive {
+    color: rgba(255, 255, 255, 0.755);
     cursor: pointer;
 }
 .wave {
@@ -128,13 +128,20 @@
     padding: 1% 5% 5% 5%;
 }
 .website-section {
+    color: rgba(255, 255, 255, 0.755);
+    text-decoration: none;
     cursor: pointer;
     margin-top: 7%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section-name {
+    font-size: larger;
 }
 .section-description {
     width: 50%;
     text-align: center;
     padding: 0 5%;
-    justify-self: right;
 }
