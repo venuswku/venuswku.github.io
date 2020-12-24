@@ -5,7 +5,7 @@
     overflow: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
     position: relative;
     text-align: center;
-    z-index: -2;
+    /* z-index: -2; */
 }
 
 /* base of cloud */
@@ -17,7 +17,7 @@
     background: #fff;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.05);
     opacity: 50%;
-    z-index: -1;
+    z-index: 0;     /* by default when transform is used */
 }
 /* left clump of cloud */
 .cloud:before {
@@ -84,7 +84,7 @@
     align-items: center;    /* make main axis of text and icon align in center */
     /* text-shadow: 1px 1px 5px #000000; */
     margin-top: -250px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .intro {
@@ -93,13 +93,22 @@
     padding: 20px;
     border-radius: 20px;
     margin: 3% 0 5%;
-    z-index: 0;
+    z-index: 1;
 }
 
 .wave-background {
     width: 100%;
-    color: white;
+    color: rgba(255, 255, 255, 0.755);
     background: transparent;
+    position: relative;
+}
+.dive {
+    cursor: pointer;
+    /* pointer-events: auto; */
+    position: relative;
+    z-index: 1;
+    /* margin-top: -500px;
+    margin-left: -1500px; */
 }
 .wave {
     height: 250px;

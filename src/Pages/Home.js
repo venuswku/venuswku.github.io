@@ -10,10 +10,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Home() {
+const Home = () => {
     const classes = useStyles();
-    const oceanRef = React.createRef();
-    const scrollToOcean = () => oceanRef.current.scrollIntoView({behavior: 'smooth'});
+    const oceanRef = React.useRef();
+    const scrollToOcean = () => {
+        const oceanSection = document.querySelector('.website-guide').style.backgroundColor = "red";
+        oceanSection.scrollIntoView({ behavior: 'smooth' });
+        // window.scrollTo({ behavior: 'smooth', top: oceanRef.current.offsetTop });
+    };
     return (
         <div className="home">
             <div className="cloud cloud1"></div>
@@ -25,8 +29,8 @@ function Home() {
                 <br/>
                 I have a passion for creating meaningful projects that can benefit people in any way possible.
             </div>
+            <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
             <div className="wave-background">
-                <button onClick={scrollToOcean}>Dive in to explore more about me!</button>
                 <div className="wave"></div>
                 <div className="website-guide" ref={oceanRef}>
                     put navigation and brief details about each website section here
@@ -35,7 +39,6 @@ function Home() {
                     Contact
                 </div>
             </div>
-            
         </div>
     );
 }

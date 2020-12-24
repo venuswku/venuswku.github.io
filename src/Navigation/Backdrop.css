@@ -5,7 +5,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 100;   /* lower than z-index of MenuDrawer so that it sits underneath MenuDrawer and over everything else */
+    z-index: 2;   /* lower than z-index of MenuDrawer so that it sits underneath MenuDrawer and over everything else */
 }
 
 /* comment this out when you want to use just the backdrop (e.g. displaying modals) and not the drawer */
