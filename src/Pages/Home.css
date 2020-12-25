@@ -75,11 +75,11 @@
     100% {margin-left: 150%;}
 }
 
-.home-title {
+.home-heading {
     color: #480355;
     font-size: 100px;
     display: flex;
-    justify-content: center;    /* make text and icon in center of title flexbox */
+    justify-content: center;    /* make text and icon in center of home-title flexbox */
     align-items: center;    /* make main axis of text and icon align in center */
     /* text-shadow: 1px 1px 5px #000000; */
     margin-top: -250px;
@@ -125,7 +125,7 @@
     width: 100%;
     background: rgb(0,5,126);
     background: linear-gradient(0deg, rgba(0,5,126,1) 0%, rgba(49,49,218,1) 100%);
-    padding: 1% 5% 5% 5%;
+    padding: 0.01% 5% 5% 5%;
 }
 .website-section {
     color: rgba(255, 255, 255, 0.755);

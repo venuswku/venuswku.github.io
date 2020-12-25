@@ -1,37 +1,44 @@
 import React from 'react';
 import './About.css';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-    purpleBackground: {
-        color: 'white',
-        background: '#715AFF',
-        width: '40%',
-        padding: 20,
-        marginLeft: 50,
-    },
-    blueBackground: {
-        color: 'white',
-        background: '#5887FF',
-        width: '40%',
-        position: 'absolute',
-        right: 0,
-        padding: 20,
-        marginRight: 50,
-    },
-}));
 
 function About() {
-    const classes = useStyles();
     return (
         <div className="about">
-            <p className="title">About</p>
-            <div className={classes.purpleBackground} style={{ fontSize:23 }}>
-                <p>Education</p>
+            <p className="about-heading">About</p>
+            <div className="about-content">
+                <div className="purple-section">
+                    <p className="about-section">Education</p>
+                    <p>University of California: Santa Cruz, CA<br/>
+                        B.S. in Computer Science (Dean’s Honor, Winter 2018 – Present)<br/>
+                        Expected Graduation: June 2022<br/>
+                        GPA: 3.91/4.0
+                    </p>
+                </div>
+                <div className="blue-section">
+                    <p className="about-section">Related Coursework</p>
+                    <ul>
+                        <li>Principles of Computer Systems Design</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Comparative Programming Languages</li>
+                        <li>Computer Architecture</li>
+                        <li>Computer Networks</li>
+                        <li>Computer Systems and Assembly Language</li>
+                        <li>Applied Machine Learning</li>
+                    </ul>
+                </div>
+                <div className="blue-section">
+                    <p className="about-section">Experience</p>
+                </div>
+                <div className="purple-section">
+                    <p className="about-section">Skills</p>
+                </div>
             </div>
-            <p className="title">Resume</p>
-            <div className={classes.blueBackground}>
-                Download
+            <p className="about-heading">Resume</p>
+            <p className="resume-description">Printable version of the above info.</p>
+            <div className="resume-content">
+                <div className="blue-section">
+                    <p className="about-section">Download</p>
+                </div>
             </div>
         </div>
     );
