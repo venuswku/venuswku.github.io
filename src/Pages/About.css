@@ -1,5 +1,6 @@
 .about {
     padding: 65px 50px 0;
+    background: rgba(49, 49, 218, 0.65);
 }
 
 .about-heading {
@@ -33,6 +34,12 @@ ul {
 .resume-description {
     margin-top: -50px;
     text-align: center;
+}
+
+.download {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
 }
 
 .purple-section {

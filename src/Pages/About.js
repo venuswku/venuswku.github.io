@@ -37,7 +37,7 @@ function About() {
             <p className="resume-description">Printable version of the above info.</p>
             <div className="resume-content">
                 <div className="blue-section">
-                    <p className="about-section">Download</p>
+                    <p className="download">Download</p>
                 </div>
             </div>
         </div>
