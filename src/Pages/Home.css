@@ -79,7 +79,7 @@
     color: #480355;
     font-size: 100px;
     display: flex;
-    justify-content: center;    /* make text and icon in center of home-title flexbox */
+    justify-content: center;    /* make text and icon in center of home-heading flexbox */
     align-items: center;    /* make main axis of text and icon align in center */
     /* text-shadow: 1px 1px 5px #000000; */
     margin-top: -250px;
@@ -88,7 +88,12 @@
 }
 
 .intro {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+.intro-content {
+    width: 50%;
+    /* display: inline-block; */
     background: #715AFF;
     padding: 20px;
     border-radius: 20px;

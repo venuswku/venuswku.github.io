@@ -1,6 +1,6 @@
 .projects {
     padding-top: 65px;
-    /* background-color: #7699D4; */
+    background: rgba(33, 41, 166, 0.75);
 }
 
 .title {
@@ -9,6 +9,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 0 0 50px; */
     /* text-shadow: 1px 1px 5px #000000; */
 }

@@ -22,18 +22,15 @@ const Home = () => {
             <div className="cloud cloud3"></div>
             <div className="home-heading">Welcome!<SentimentSatisfiedRounded className={classes.smileIcon}/></div>
             <div className="intro">
-                Hello! I'm Venus, a third-year undergraduate student studying Computer Science at the University of California in Santa Cruz.
-                <br/>
-                I have a passion for creating meaningful projects that can benefit people in any way possible.
+                <p className="intro-content">Hello, I'm Venus! I have a passion for combining creativity and programming to create meaningful projects that can benefit people.</p>
             </div>
-            
             <div className="wave-background">
                 <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
                 <div className="wave"></div>
                 <div className="website-guide">
                     <NavLink exact to="/about" className="website-section" ref={oceanRef}>
                         <div className="section-name">About</div>
-                        <p className="section-description">My education, work experience, and skills. Downloadable resume is provided at the bottom of this section.</p>
+                        <p className="section-description">My background and what I'm passionate about. Downloadable resume is provided at the bottom of this section.</p>
                     </NavLink>
                     <NavLink exact to="/projects" className="website-section">
                         <div className="section-name">Projects</div>
@@ -41,7 +38,7 @@ const Home = () => {
                     </NavLink>
                     <NavLink exact to="/contact" className="website-section">
                         <div className="section-name">Contact</div>
-                        <p className="section-description">How to contact me.</p>
+                        <p className="section-description">How to contact me!</p>
                     </NavLink>
                 </div>
             </div>

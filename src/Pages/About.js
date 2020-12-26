@@ -7,34 +7,16 @@ function About() {
             <p className="about-heading">About</p>
             <div className="about-content">
                 <div className="purple-section">
-                    <p className="about-section">Education</p>
-                    <p>University of California: Santa Cruz, CA<br/>
-                        B.S. in Computer Science (Dean’s Honor, Winter 2018 – Present)<br/>
-                        Expected Graduation: June 2022<br/>
-                        GPA: 3.91/4.0
-                    </p>
+                    Currently, I'm a third-year undergraduate studying Computer Science at the University of California in Santa Cruz.
+                    I hope to develop software projects that can benefit people
+                    because programming gives a meaningful purpose to the computer and mobile applications that we use in our daily lives.
                 </div>
                 <div className="blue-section">
-                    <p className="about-section">Related Coursework</p>
-                    <ul>
-                        <li>Principles of Computer Systems Design</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Comparative Programming Languages</li>
-                        <li>Computer Architecture</li>
-                        <li>Computer Networks</li>
-                        <li>Computer Systems and Assembly Language</li>
-                        <li>Applied Machine Learning</li>
-                    </ul>
-                </div>
-                <div className="blue-section">
-                    <p className="about-section">Experience</p>
-                </div>
-                <div className="purple-section">
-                    <p className="about-section">Skills</p>
+                    Whenever possible, I like to incorporate digital art into my projects.
+                    It's a nice way to visually express emotions and interactively connect with the people who look at my work.
                 </div>
             </div>
             <p className="about-heading">Resume</p>
-            <p className="resume-description">Printable version of the above info.</p>
             <div className="resume-content">
                 <div className="blue-section">
                     <p className="download">Download</p>

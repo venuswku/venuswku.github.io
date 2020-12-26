@@ -22,18 +22,9 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
-ul {
-    columns: 2;
-}
-
 .resume-content {
     display: flex;    
     align-items: flex-start;
-}
-
-.resume-description {
-    margin-top: -50px;
-    text-align: center;
 }
 
 .download {
