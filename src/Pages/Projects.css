@@ -1,6 +1,8 @@
 .projects {
     padding-top: 65px;
-    background: rgba(33, 41, 166, 0.75);
+    padding-bottom: 7%;
+    /* background: rgba(33, 41, 166, 0.75); */
+    background: rgba(45, 54, 182, 0.85);
 }
 
 .title {
