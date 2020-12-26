@@ -93,7 +93,6 @@
 }
 .intro-content {
     width: 50%;
-    /* display: inline-block; */
     background: #715AFF;
     padding: 20px;
     border-radius: 20px;
@@ -130,7 +129,7 @@
     width: 100%;
     background: rgb(0, 5, 126);
     background: linear-gradient(0deg, rgba(0, 5, 126, 1) 0%, rgba(49, 49, 218, 0.65) 100%);
-    padding: 0.01% 5% 5% 5%;
+    padding: 0.01% 5% 7% 5%;
 }
 .website-section {
     color: rgba(255, 255, 255, 0.755);
