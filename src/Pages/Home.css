@@ -129,7 +129,7 @@
     width: 100%;
     background: rgb(0, 5, 126);
     background: linear-gradient(0deg, rgba(0, 5, 126, 1) 0%, rgba(49, 49, 218, 0.65) 100%);
-    padding: 0.01% 5% 7% 5%;
+    padding: 0.01% 5% 7% 0%;
 }
 .website-section {
     color: rgba(255, 255, 255, 0.755);
@@ -137,7 +137,7 @@
     cursor: pointer;
     margin-top: 7%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -146,11 +146,41 @@
     color: white;
     text-shadow: 1px 1px 5px #000000;
 }
-.section-name {
-    font-size: larger;
+.contact-section:hover .starfish {
+    animation: animateStarfish 1.5s infinite linear;
 }
+
+.animal {
+    position: relative;
+    z-index: 0;     /* by default when transform is used */
+}
+@keyframes animateStarfish {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(0deg);}
+    60% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.section-name {
+    color: white;
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+}
+.about-name {
+    margin-top: -10.5%;
+    margin-bottom: 4%;
+}
+.contact-name {
+    margin-top: -8.8%;
+    margin-bottom: 3%;
+}
+
 .section-description {
     width: 50%;
     text-align: center;
     padding: 0 5%;
+    position: relative;
+    z-index: 1;
 }

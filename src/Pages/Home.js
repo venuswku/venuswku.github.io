@@ -2,7 +2,9 @@ import React from 'react';
 import './Home.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { SentimentSatisfiedRounded } from '@material-ui/icons';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as SeaLionBody } from '../Assets/SeaLionBody.svg';
+import { ReactComponent as Starfish } from '../Assets/Starfish.svg';
 
 const useStyles = makeStyles((theme) => ({
     smileIcon: {
@@ -22,22 +24,24 @@ const Home = () => {
             <div className="cloud cloud3"></div>
             <div className="home-heading">Welcome!<SentimentSatisfiedRounded className={classes.smileIcon}/></div>
             <div className="intro">
-                <p className="intro-content">Hello, I'm Venus! I have a passion for combining creativity and programming to create meaningful projects that can benefit people.</p>
+                <p className="intro-content">Hello, I'm Venus! I have a passion for combining creativity and programming to create engaging projects that are beneficial for people.</p>
             </div>
             <div className="wave-background">
                 <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
                 <div className="wave"></div>
                 <div className="website-guide">
-                    <NavLink exact to="/about" className="website-section" ref={oceanRef}>
-                        <div className="section-name">About</div>
+                    <NavLink exact to="/about" className="website-section about-section" ref={oceanRef}>
+                        <SeaLionBody className="animal" width="30%" height="30%" />
+                        <div className="section-name about-name">About</div>
                         <p className="section-description">My background and what I'm passionate about. Downloadable resume is provided at the bottom of this section.</p>
                     </NavLink>
                     <NavLink exact to="/projects" className="website-section">
                         <div className="section-name">Projects</div>
                         <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>
                     </NavLink>
-                    <NavLink exact to="/contact" className="website-section">
-                        <div className="section-name">Contact</div>
+                    <NavLink exact to="/contact" className="website-section contact-section">
+                        <Starfish className="animal starfish" width="30%" height="30%" />
+                        <div className="section-name contact-name">Contact</div>
                         <p className="section-description">How to contact me!</p>
                     </NavLink>
                 </div>
