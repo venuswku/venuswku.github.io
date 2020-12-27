@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { SentimentSatisfiedRounded } from '@material-ui/icons';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as SeaLionBody } from '../Assets/SeaLionBody.svg';
+import { ReactComponent as SeaLionTail } from '../Assets/SeaLionTail.svg';
 import { ReactComponent as Starfish } from '../Assets/Starfish.svg';
 
 const useStyles = makeStyles((theme) => ({
@@ -31,7 +32,8 @@ const Home = () => {
                 <div className="wave"></div>
                 <div className="website-guide">
                     <NavLink exact to="/about" className="website-section about-section" ref={oceanRef}>
-                        <SeaLionBody className="animal" width="30%" height="30%" />
+                        <SeaLionBody className="animal sea-lion-body" width="30%" height="30%" />
+                        <SeaLionTail className="animal sea-lion-tail" width="30%" height="30%" />
                         <div className="section-name about-name">About</div>
                         <p className="section-description">My background and what I'm passionate about. Downloadable resume is provided at the bottom of this section.</p>
                     </NavLink>
