@@ -147,7 +147,7 @@
     text-shadow: 1px 1px 5px #000000;
 }
 .about-section:hover .sea-lion-tail {
-    animation: animateSeaLion 1.5s infinite linear;
+    animation: animateSeaLion 1s infinite linear;
 }
 .contact-section:hover .starfish {
     animation: animateStarfish 1.5s infinite linear;
@@ -162,21 +162,23 @@
 }
 .sea-lion-tail {
     margin-top: -16.8%;
-    transform-origin: 55% 50%;
+    transform-origin: 24.5% 50%;
 }
 .starfish {
     margin-top: -3%;
 }
 @keyframes animateSeaLion {
     0% {transform: rotate(0deg);}
-    50% {transform: rotate(-15deg);}
+    30% {transform: rotate(-10deg);}
+    60% {transform: rotate(0deg);}
+    90% {transform: rotate(5deg);}
     100% {transform: rotate(0deg);}
 }
 @keyframes animateStarfish {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(10deg);}
     40% {transform: rotate(0deg);}
-    60% {transform: rotate(-15deg);}
+    70% {transform: rotate(-15deg);}
     100% {transform: rotate(0deg);}
 }
 

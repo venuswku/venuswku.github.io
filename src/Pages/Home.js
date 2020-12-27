@@ -30,8 +30,8 @@ const Home = () => {
             <div className="wave-background">
                 <div className="dive" onClick={scrollToOcean}>Dive in to explore more!</div>
                 <div className="wave"></div>
-                <div className="website-guide">
-                    <NavLink exact to="/about" className="website-section about-section" ref={oceanRef}>
+                <div className="website-guide" ref={oceanRef}>
+                    <NavLink exact to="/about" className="website-section about-section">
                         <SeaLionBody className="animal sea-lion-body" width="30%" height="30%" />
                         <SeaLionTail className="animal sea-lion-tail" width="30%" height="30%" />
                         <div className="section-name about-name">About</div>
