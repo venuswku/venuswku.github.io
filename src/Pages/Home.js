@@ -7,8 +7,8 @@ import { ReactComponent as SeaLionBody } from '../Assets/SeaLionBody.svg';
 import { ReactComponent as SeaLionTail } from '../Assets/SeaLionTail.svg';
 import { ReactComponent as Starfish } from '../Assets/Starfish.svg';
 import { ReactComponent as OctopusBody } from '../Assets/OctopusBody.svg';
-import { ReactComponent as OctopusTentaclesLeft } from '../Assets/OctopusTentaclesLeft.svg';
-import { ReactComponent as OctopusTentaclesRight } from '../Assets/OctopusTentaclesRight.svg';
+import { ReactComponent as OctopusLeftTentacle } from '../Assets/OctopusLeftTentacle.svg';
+import { ReactComponent as OctopusRightTentacle } from '../Assets/OctopusRightTentacle.svg';
 
 const useStyles = makeStyles((theme) => ({
     smileIcon: {
@@ -41,8 +41,8 @@ const Home = () => {
                         <p className="section-description">My background and what I'm passionate about. Downloadable resume is provided at the bottom of this section.</p>
                     </NavLink>
                     <NavLink exact to="/projects" className="website-section projects-section">
-                        <OctopusTentaclesLeft className="animal octopus-tentacle-left" />
-                        <OctopusTentaclesRight className="animal octopus-tentacle-right" />
+                        <OctopusLeftTentacle className="animal octopus-left-tentacle" />
+                        <OctopusRightTentacle className="animal octopus-right-tentacle" />
                         <OctopusBody className="animal octopus-body" />
                         <div className="section-name projects-name">Projects</div>
                         <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>

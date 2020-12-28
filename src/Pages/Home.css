@@ -152,11 +152,11 @@
 .projects-section:hover .octopus-body {
     animation: animateOctopusBody 3s infinite linear;
 }
-.projects-section:hover .octopus-tentacle-left {
-    animation: animateOctopusTentacleLeft 3s infinite linear;
+.projects-section:hover .octopus-left-tentacle {
+    animation: animateOctopusLeftTentacle 3s infinite linear;
 }
-.projects-section:hover .octopus-tentacle-right {
-    animation: animateOctopusTentacleRight 3s infinite linear;
+.projects-section:hover .octopus-right-tentacle {
+    animation: animateOctopusRightTentacle 3s infinite linear;
 }
 .contact-section:hover .starfish {
     animation: animateStarfish 1.5s infinite linear;
@@ -178,13 +178,14 @@
 .octopus-body {
     margin-top: -25%;
 }
-.octopus-tentacle-left {
+.octopus-left-tentacle {
     width: 15%;
+    margin-top: -0.8%;
     margin-left: -17%;
     transform-origin: 70% 50%;
 }
-.octopus-tentacle-right {
-    margin-top: -25.3%;
+.octopus-right-tentacle {
+    margin-top: -25.2%;
     margin-left: 31.5%;
     transform-origin: 20% 50%;
 }
@@ -201,10 +202,10 @@
 @keyframes animateOctopusBody {
     50% {transform: translateY(-8%);}
 }
-@keyframes animateOctopusTentacleLeft {
+@keyframes animateOctopusLeftTentacle {
     50% {transform: rotate(-20deg);}
 }
-@keyframes animateOctopusTentacleRight {
+@keyframes animateOctopusRightTentacle {
     50% {transform: rotate(20deg);}
 }
 @keyframes animateStarfish {
