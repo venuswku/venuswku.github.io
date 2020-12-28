@@ -176,18 +176,17 @@
     transform-origin: 24.5% 50%;
 }
 .octopus-body {
-    margin-top: -17%;
+    margin-top: -25%;
 }
 .octopus-tentacle-left {
     width: 15%;
-    margin-left: -15%;
+    margin-left: -17%;
     transform-origin: 70% 50%;
 }
 .octopus-tentacle-right {
-    width: 15%;
-    transform: scaleX(-1);
-    margin-top: -17%;
-    margin-left: 15%;
+    margin-top: -25.3%;
+    margin-left: 31.5%;
+    transform-origin: 20% 50%;
 }
 .starfish {
     margin-top: -3%;
