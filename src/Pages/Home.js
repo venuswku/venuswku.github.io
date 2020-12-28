@@ -34,19 +34,20 @@ const Home = () => {
                 <div className="wave"></div>
                 <div className="website-guide" ref={oceanRef}>
                     <NavLink exact to="/about" className="website-section about-section">
-                        <SeaLionBody className="animal sea-lion-body" width="30%" height="30%" />
-                        <SeaLionTail className="animal sea-lion-tail" width="30%" height="30%" />
+                        <SeaLionBody className="animal sea-lion-body" />
+                        <SeaLionTail className="animal sea-lion-tail" />
                         <div className="section-name about-name">About</div>
                         <p className="section-description">My background and what I'm passionate about. Downloadable resume is provided at the bottom of this section.</p>
                     </NavLink>
                     <NavLink exact to="/projects" className="website-section projects-section">
-                        <OctopusTentacles className="animal octopus-tentacles" width="30%" height="30%" />
-                        <OctopusBody className="animal octopus-body" width="30%" height="30%" />
+                        <OctopusTentacles className="animal octopus-tentacle-left" />
+                        <OctopusTentacles className="animal octopus-tentacle-right" />
+                        <OctopusBody className="animal octopus-body" />
                         <div className="section-name projects-name">Projects</div>
                         <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>
                     </NavLink>
                     <NavLink exact to="/contact" className="website-section contact-section">
-                        <Starfish className="animal starfish" width="30%" height="30%" />
+                        <Starfish className="animal starfish" />
                         <div className="section-name contact-name">Contact</div>
                         <p className="section-description">How to contact me!</p>
                     </NavLink>
