@@ -164,6 +164,12 @@
     margin-top: -16.8%;
     transform-origin: 24.5% 50%;
 }
+.octopus-body {
+    margin-top: -17%;
+}
+.octopus-tentacles {
+    margin-top: -0.3%;
+}
 .starfish {
     margin-top: -3%;
 }
@@ -191,6 +197,10 @@
 .about-name {
     margin-top: -10.4%;
     margin-bottom: 4%;
+}
+.projects-name {
+    margin-top: -14%;
+    margin-bottom: 12%;
 }
 .contact-name {
     margin-top: -8.8%;
