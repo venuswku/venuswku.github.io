@@ -150,7 +150,7 @@
     animation: animateSeaLion 1s infinite linear;
 }
 .projects-section:hover .octopus-body {
-    animation: animateOctopusBody 2s infinite linear;
+    animation: animateOctopusBody 3s infinite linear;
 }
 .projects-section:hover .octopus-tentacle-left {
     animation: animateOctopusTentacleLeft 2s infinite linear;
@@ -199,7 +199,7 @@
     100% {transform: rotate(0deg);}
 }
 @keyframes animateOctopusBody {
-    /* 0% {transform: } */
+    50% {transform: translateY(-8%);}
 }
 @keyframes animateOctopusTentacleLeft {
 
@@ -222,7 +222,7 @@
     z-index: 1;
 }
 .about-name {
-    margin-top: -10.4%;
+    margin-top: -10.8%;
     margin-bottom: 4%;
 }
 .projects-name {
@@ -230,7 +230,7 @@
     margin-bottom: 12%;
 }
 .contact-name {
-    margin-top: -8.8%;
+    margin-top: -9.2%;
     margin-bottom: 3%;
 }
 
