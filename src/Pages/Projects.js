@@ -1,20 +1,28 @@
 import React from 'react';
 import './Projects.css';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as OctopusBody } from '../Assets/OctopusBody.svg';
+import { ReactComponent as OctopusLeftTentacle } from '../Assets/OctopusLeftTentacle.svg';
+import { ReactComponent as OctopusRightTentacle } from '../Assets/OctopusRightTentacle.svg';
 import momGif from '../Assets/Mom.gif';
 
 function Projects() {
     return (
         <div className="projects">
+            <div className="octopus">
+                <OctopusBody className="octopus-head" />
+                <OctopusRightTentacle className="right-tentacle" />
+                <OctopusLeftTentacle className="left-tentacle" />
+            </div>
             <p className="heading">Projects</p>
-                <div className="project">
-                    <p className="project-name">Personal Website</p>
-                    <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
-                    <div className="project-links">
-                        <NavLink exact to="/" className="demo" target="_blank">Demo</NavLink>
-                        <a className="code" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
-                    </div>
+            <div className="project">
+                <p className="project-name">Personal Website</p>
+                <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
+                <div className="project-links">
+                    <NavLink exact to="/" className="demo" target="_blank">Demo</NavLink>
+                    <a className="code" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
+            </div>
             <p className="heading art-heading">Digital Art</p>
             <div className="art">
                 <iframe title="video1" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

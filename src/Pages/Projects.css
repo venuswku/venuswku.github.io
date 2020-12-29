@@ -1,7 +1,31 @@
 .projects {
     padding: 65px 50px 7%;
-    /* background: rgba(33, 41, 166, 0.75); */
     background: rgba(45, 54, 182, 0.85);
+}
+
+.octopus {
+    width: 100%;
+    margin-left: -50px;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+}
+.octopus-head {
+    width: 80%;
+    transform: rotate(-90deg);
+    margin-top: -10%;
+    margin-left: 62%;
+}
+.right-tentacle {
+    width: 80%;
+    transform: rotate(45deg);
+    margin-top: -10%;
+    margin-left: -47%;
+}
+.left-tentacle {
+    width: 80%;
+    transform: rotate(-45deg);
+    margin-left: 66%;
 }
 
 .project {
