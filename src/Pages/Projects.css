@@ -13,12 +13,15 @@
     flex-direction: column;
     align-items: center;
 }
+iframe {
+    margin-top: 5%;
+}
+.mom {
+    width: 40%;
+    margin-top: 5%;
+}
 .art-description {
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     width: 60%;
-}
-
-iframe {
-    margin-top: 5%;
 }

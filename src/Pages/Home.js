@@ -45,7 +45,7 @@ const Home = () => {
                         <OctopusRightTentacle className="animal octopus-right-tentacle" />
                         <OctopusBody className="animal octopus-body" />
                         <div className="section-name projects-name">Projects</div>
-                        <p className="section-description">Brief descriptions, source code, and demos of my projects.</p>
+                        <p className="section-description">Brief descriptions, source code, and demos of my projects. Some of my digital art is included.</p>
                         
                     </NavLink>
                     <NavLink exact to="/contact" className="website-section contact-section">
