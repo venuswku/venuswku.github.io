@@ -1,8 +1,45 @@
 .projects {
-    padding-top: 65px;
-    padding-bottom: 7%;
+    padding: 65px 50px 7%;
     /* background: rgba(33, 41, 166, 0.75); */
     background: rgba(45, 54, 182, 0.85);
+}
+
+.project {
+    color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    margin-left: 2%;
+    text-align: center;
+}
+.project-name {
+    color: #480355;
+    font-size: larger;
+    font-weight: 500;
+}
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.demo {
+    color: rgba(255, 255, 255, 0.755);
+    background: #5887FF;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+.code {
+    color: rgba(255, 255, 255, 0.755);
+    background: #715AFF;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+.demo:hover,
+.code:hover {
+    color: white;
+    text-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
 }
 
 .art-heading {

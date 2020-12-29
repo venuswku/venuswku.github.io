@@ -1,17 +1,26 @@
 import React from 'react';
 import './Projects.css';
+import { NavLink } from 'react-router-dom';
 import momGif from '../Assets/Mom.gif';
 
 function Projects() {
     return (
         <div className="projects">
             <p className="heading">Projects</p>
+                <div className="project">
+                    <p className="project-name">Personal Website</p>
+                    <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
+                    <div className="project-links">
+                        <NavLink exact to="/" className="demo" target="_blank">Demo</NavLink>
+                        <a className="code" href="https://github.com/venuswku/venuswku.github.io" target="_blank">Code</a>
+                    </div>
+                </div>
             <p className="heading art-heading">Digital Art</p>
             <div className="art">
                 <iframe title="video1" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p className="art-description">
                     Food for Thought <span role="img" aria-label="thinking-face">🤔</span>
-                    <br/>Based on the thoughts I had when I was little.
+                    <br/>Based on some thoughts I had when I was young.
                     <br/>Created using Adobe After Effects and Photoshop.
                 </p>
                 <iframe title="video2" width="560" height="315" src="https://www.youtube.com/embed/_rqA5OehlNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
