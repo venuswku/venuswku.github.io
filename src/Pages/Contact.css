@@ -1,6 +1,7 @@
 .contact {
-    padding: 65px 50px 7%;
+    padding-top: 65px;
     background: rgba(11, 17, 139, 0.75);
+    height: 89.6vh;
 }
 
 .contact-links {
