@@ -3,13 +3,3 @@
     padding-bottom: 7%;
     background: rgba(11, 17, 139, 0.75);
 }
-
-.title {
-    color: #480355;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0 0 0 50px; */
-    /* text-shadow: 1px 1px 5px #000000; */
-}

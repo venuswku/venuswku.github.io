@@ -5,11 +5,20 @@
     background: rgba(45, 54, 182, 0.85);
 }
 
-.title {
-    color: #480355;
-    font-size: 50px;
+.art-heading {
+    margin-bottom: 0;
+}
+.art {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    /* text-shadow: 1px 1px 5px #000000; */
+}
+.art-description {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 60%;
+}
+
+iframe {
+    margin-top: 5%;
 }
