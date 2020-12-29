@@ -39,6 +39,9 @@
 .code:hover {
     color: white;
     text-shadow: 1px 1px 5px #000000;
+}
+.demo:active,
+.code:active {
     box-shadow: 1px 1px 5px #000000;
 }
 
@@ -51,6 +54,7 @@
     align-items: center;
 }
 iframe {
+    border-radius: 20px;
     margin-top: 5%;
 }
 .mom {

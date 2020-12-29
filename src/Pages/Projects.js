@@ -12,7 +12,7 @@ function Projects() {
                     <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
                     <div className="project-links">
                         <NavLink exact to="/" className="demo" target="_blank">Demo</NavLink>
-                        <a className="code" href="https://github.com/venuswku/venuswku.github.io" target="_blank">Code</a>
+                        <a className="code" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                 </div>
             <p className="heading art-heading">Digital Art</p>
