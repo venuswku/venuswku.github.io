@@ -38,6 +38,8 @@
     width: 40%;
     margin-left: 2%;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 .project-name {
     color: #480355;
