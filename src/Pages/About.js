@@ -1,9 +1,12 @@
 import React from 'react';
 import './About.css';
+import { ReactComponent as SeaLionBody } from '../Assets/SeaLionBody.svg';
+import { ReactComponent as SeaLionBodyContent } from '../Assets/SeaLionBodyContent.svg';
 
 function About() {
     return (
         <div className="about">
+            <SeaLionBodyContent className="sea-lion" />
             <p className="heading">About</p>
             <div className="blue-section">
                 Currently, I'm a third-year undergraduate studying Computer Science at the University of California in Santa Cruz.

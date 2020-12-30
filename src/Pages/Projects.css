@@ -1,6 +1,7 @@
 .projects {
     padding: 65px 50px 7%;
     background: rgba(45, 54, 182, 0.85);
+    overflow: hidden;
 }
 
 .octopus {
@@ -80,6 +81,8 @@
 iframe {
     border-radius: 20px;
     margin-top: 5%;
+    position: relative;
+    z-index: 1;
 }
 .mom {
     width: 40%;
