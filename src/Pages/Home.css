@@ -165,30 +165,41 @@
 .animal {
     position: relative;
     z-index: 0;     /* by default when transform is used */
-    width: 30%;
-    height: 30%;
 }
 .sea-lion-body {
-    margin-top: -4%;
+    width: 20%;
+    height: 20%;
+    margin-top: -3%;
+    margin-left: 2%;
 }
 .sea-lion-tail {
-    margin-top: -16.8%;
-    transform-origin: 24.5% 50%;
+    width: 5%;
+    height: 5%;
+    margin-top: -5.9%;
+    margin-left: -21.5%;
+    transform-origin: 100% 20%;
 }
 .octopus-body {
-    margin-top: -17%;
+    width: 22%;
+    height: 22%;
+    margin-top: -11.5%;
 }
 .octopus-left-tentacle {
-    margin-top: -0.3%;
-    margin-left: -1%;
-    transform-origin: 25% 50%;
+    width: 6%;
+    height: 6%;
+    margin-top: 5%;
+    margin-left: -12%;
 }
 .octopus-right-tentacle {
-    margin-top: -16.8%;
-    transform-origin: 75% 50%;
+    width: 6%;
+    height: 6%;
+    margin-top: -6.3%;
+    margin-left: 12%;
 }
 .starfish {
-    margin-top: -3%;
+    width: 40%;
+    height: 40%;
+    margin-top: -4%;
 }
 @keyframes animateSeaLion {
     0% {transform: rotate(0deg);}
@@ -221,16 +232,16 @@
     z-index: 1;
 }
 .about-name {
-    margin-top: -10.8%;
+    margin-top: -3.8%;
     margin-bottom: 4%;
 }
 .projects-name {
     margin-top: -14%;
-    margin-bottom: 12%;
+    margin-bottom: 12.5%;
 }
 .contact-name {
-    margin-top: -9.2%;
-    margin-bottom: 4%;
+    margin-top: -11.5%;
+    margin-bottom: 5%;
 }
 
 .section-description {

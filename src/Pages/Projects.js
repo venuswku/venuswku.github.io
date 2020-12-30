@@ -13,6 +13,8 @@ function Projects() {
                 <OctopusBody className="octopus-head" />
                 <OctopusRightTentacle className="right-tentacle" />
                 <OctopusLeftTentacle className="left-tentacle" />
+                <OctopusRightTentacle className="right-tentacle" />
+                <OctopusLeftTentacle className="left-tentacle" />
             </div>
             <p className="heading">Projects</p>
             <div className="project">

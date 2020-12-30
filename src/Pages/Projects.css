@@ -12,21 +12,25 @@
     overflow: hidden;
 }
 .octopus-head {
-    width: 80%;
+    width: 50%;
+    height: 50%;
     transform: rotate(-90deg);
-    margin-top: -10%;
-    margin-left: 62%;
+    margin-left: 75%;
+    margin-bottom: -10%;
 }
 .right-tentacle {
-    width: 80%;
+    width: 10%;
+    height: 10%;
     transform: rotate(45deg);
-    margin-top: -10%;
-    margin-left: -47%;
+    margin-top: 20%;
+    margin-left: -3%;
 }
 .left-tentacle {
-    width: 80%;
+    width: 10%;
+    height: 10%;
     transform: rotate(-45deg);
-    margin-left: 66%;
+    margin-top: 20%;
+    margin-left: 93%;
 }
 
 .project {
