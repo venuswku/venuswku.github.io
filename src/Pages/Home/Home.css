@@ -5,6 +5,7 @@
     overflow: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
     position: relative;
     text-align: center;
+    z-index: -1;
 }
 
 /* base of cloud */
@@ -44,6 +45,7 @@
 .cloud1 {
     transform: scale(0.5);
     opacity: 25%;
+    -webkit-animation: animateCloud1Initial 30s 1,animateCloud1Loop 60s linear 30s infinite;
     animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
 }
 @keyframes animateCloud1Initial {
