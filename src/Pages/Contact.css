@@ -8,7 +8,7 @@
 
 .contact-heading {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bubble {
@@ -17,7 +17,7 @@
     border-radius: 50%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), inset 0px 5px 15px 2px rgba(255, 255, 255, 0.7);
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 .bubble1 {
     left: 10%;
@@ -63,6 +63,15 @@
     100% {margin-left: 60px;}
 }
 
+.starfishy {
+    width: 80%;
+    height: 80%;
+    transform: scaleX(-1) rotate(60deg);
+    margin-left: 58%;
+    position: absolute;
+    z-index: 0;
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
@@ -70,6 +79,8 @@
     color: rgba(255, 255, 255, 0.755);
     text-decoration: none;
     margin-bottom: 2%;
+    position: relative;
+    z-index: 2;
 }
 .contact-links:hover {
     color: white;
