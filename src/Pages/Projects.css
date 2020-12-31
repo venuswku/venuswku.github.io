@@ -42,7 +42,7 @@
     z-index: 1;
 }
 .project-name {
-    color: #480355;
+    color: #5887FF;
     font-size: larger;
     font-weight: 500;
 }
@@ -50,15 +50,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.demo {
-    color: rgba(255, 255, 255, 0.755);
-    background: #5887FF;
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 20px;
-}
-.code {
+.project-link-button {
     color: rgba(255, 255, 255, 0.755);
     background: #715AFF;
     display: inline-block;
@@ -66,13 +58,11 @@
     padding: 20px;
     border-radius: 20px;
 }
-.demo:hover,
-.code:hover {
+.project-link-button:hover {
     color: white;
     text-shadow: 1px 1px 5px #000000;
 }
-.demo:active,
-.code:active {
+.project-link-button:active {
     box-shadow: 1px 1px 5px #000000;
 }
 

@@ -11,13 +11,13 @@ function About() {
                     <div className="speech-bubble about-bubble">More info can be found in the resume below!</div>
                     <SeaLionBody className="sea-lion" />
                 </div>
-                <div className="blue-section">
+                <div className="about-me-section">
                     Currently, I'm a third-year undergraduate studying Computer Science at the University of California in Santa Cruz.
                     I hope to develop software projects that can benefit people
                     because programming gives a meaningful purpose to the computer and mobile applications that we use every day.
                 </div>
             </div>
-            <div className="purple-section">
+            <div className="about-me-section hobby-section">
                 Whenever possible, I like to incorporate digital art into my projects.
                 It's a nice way to visually express emotions and interactively connect with the people who look at my work.
             </div>
