@@ -23,7 +23,7 @@
     transform: scale(0);
     transform-origin: 100% 50%;
     animation-fill-mode: forwards;
-    animation: animateSpeechBubble 30s linear infinite;
+    animation: animateSpeechBubble 35s linear infinite;
 }
 .speech-bubble::before {
     content: "";
@@ -39,11 +39,20 @@
 }
 @keyframes animateSpeechBubble {
     10% {transform: scale(1);}
-    90% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(0);}
+    100% {transform: scale(0);}
 }
 .about-bubble {
     width: 15%;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
     z-index: 0;
+}
+.about-bubble:hover {
+    cursor: pointer;
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
 }
 
 .about-me {

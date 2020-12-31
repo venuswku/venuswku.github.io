@@ -3,12 +3,14 @@ import './About.css';
 import { ReactComponent as SeaLionBody } from '../Assets/SeaLionBody.svg';
 
 function About() {
+    const resumeRef = React.useRef();
+    const scrollToResume = () => window.scrollTo({ behavior: 'smooth', top: resumeRef.current.offsetTop });
     return (
         <div className="about">
             <p className="heading">About</p>
             <div className="about-me">
                 <div className="sea-lion-speech">
-                    <div className="speech-bubble about-bubble">More info can be found in the resume below!</div>
+                    <div className="speech-bubble about-bubble" onClick={scrollToResume}>More info can be found in the resume below!</div>
                     <SeaLionBody className="sea-lion" />
                 </div>
                 <div className="about-me-section">
@@ -22,7 +24,7 @@ function About() {
                 It's a nice way to visually express emotions and interactively connect with the people who look at my work.
             </div>
             <p className="heading">Resume</p>
-            <div className="resume-content">
+            <div className="resume-content" ref={resumeRef}>
                 <div className="download">Download</div>
             </div>
         </div>
