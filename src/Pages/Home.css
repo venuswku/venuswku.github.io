@@ -147,19 +147,19 @@
     text-shadow: 1px 1px 5px #000000;
 }
 .about-section:hover .sea-lion-tail {
-    animation: animateSeaLion 1s infinite linear;
+    animation: animateSeaLion 1s linear infinite;
 }
 .projects-section:hover .octopus-body {
-    animation: animateOctopusBody 3s infinite linear;
+    animation: animateOctopusBody 3s linear infinite;
 }
 .projects-section:hover .octopus-left-tentacle {
-    animation: animateOctopusLeftTentacle 3s infinite linear;
+    animation: animateOctopusLeftTentacle 3s linear infinite;
 }
 .projects-section:hover .octopus-right-tentacle {
-    animation: animateOctopusRightTentacle 3s infinite linear;
+    animation: animateOctopusRightTentacle 3s linear infinite;
 }
 .contact-section:hover .starfish {
-    animation: animateStarfish 1.5s infinite linear;
+    animation: animateStarfish 1.5s linear infinite;
 }
 
 .animal {
