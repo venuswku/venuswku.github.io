@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 import GitHubIcon from '@material-ui/icons/GitHub';
-// import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { ReactComponent as Starfish } from '../Assets/Starfish.svg';
 
 function Contact() {
@@ -20,6 +20,9 @@ function Contact() {
             </a>
             <a href="https://github.com/venuswku" target="_blank" rel="noopener noreferrer" className="contact-links">
                 <GitHubIcon fontSize="large" className="contact-link-icon" />GitHub: venuswku
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="contact-links">
+                <LinkedInIcon fontSize="large" className="contact-link-icon" />LinkedIn: venuswku
             </a>
         </div>
     );
