@@ -4,10 +4,10 @@ import ScrollToTop from './Navigation/ScrollToTop/ScrollToTop';
 import NavigationBar from './Navigation/NavigationBar/NavigationBar';
 import MenuDrawer from './Navigation/MenuDrawer/MenuDrawer';
 import Backdrop from './Navigation/Backdrop/Backdrop';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Projects from './Pages/Projects';
-import Contact from './Pages/Contact';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
 
 export default function App() {
   let backdrop;
