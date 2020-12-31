@@ -10,7 +10,7 @@ function About() {
             <p className="heading">About</p>
             <div className="about-me">
                 <div className="sea-lion-speech">
-                    <div className="speech-bubble about-bubble" onClick={scrollToResume}>More info can be found in the resume below!</div>
+                    <div className="speech-bubble about-speech-bubble" onClick={scrollToResume}>More info can be found in the resume below!</div>
                     <SeaLionBody className="sea-lion" />
                 </div>
                 <div className="about-me-section">
