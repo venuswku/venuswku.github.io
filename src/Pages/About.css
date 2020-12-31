@@ -5,14 +5,6 @@
     overflow: hidden;
 }
 
-.sea-lion {
-    width: 45%;
-    transform: scaleX(-1);
-    position: absolute;
-    z-index: 0;
-    margin-left: 68%;
-}
-
 .heading {
     color: #480355;
     font-size: 50px;
@@ -21,9 +13,75 @@
     align-items: center;
 }
 
-.about-section {
-    font-size: larger;
-    color: rgba(255, 255, 255, 0.9);
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.sea-lion-speech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 45%;
+    position: absolute;
+    width: 100%;
+}
+.speech-bubble {
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    /* transform: scale(0); */
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.speech-bubble::before {
+    content: "";
+    display: block;
+    width: 0;
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.8);
+    /* transform: rotate(10deg); */
+    /* following 3 lines of code positions pointy part of speech bubble */
+    position: absolute;
+    top: 30%;
+    left: 100%;
+}
+.about-bubble {
+    width: 20%;
+    z-index: 0;
+}
+.sea-lion {
+    width: 40%;
+    height: 40%;
+    transform: scaleX(-1);
+    margin-left: 1.5%;
+    z-index: 1;
+}
+
+.blue-section {
+    background: #5887FF;
+    width: 40%;
+    /* display: inline-block; */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.purple-section {
+    background: #715AFF;
+    width: 40%;
+    /* display: inline-block; */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .resume-content {
@@ -45,27 +103,4 @@
 }
 .download:active {
     box-shadow: 1px 1px 5px #000000;
-}
-
-.blue-section {
-    background: #5887FF;
-    width: 40%;
-    /* display: inline-block; */
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.purple-section {
-    background: #715AFF;
-    width: 40%;
-    /* display: inline-block; */
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 0;
-    position: relative;
-    z-index: 1;
 }
