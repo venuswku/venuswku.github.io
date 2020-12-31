@@ -1,11 +1,10 @@
 .home {
     height: 100%;
     padding-top: 115px;
-    background-color: #7698d4;
+    background-color: transparent;
     overflow: hidden; /* hides horizonal scroller when cloud moves off screen to the right */
     position: relative;
     text-align: center;
-    z-index: -1;
 }
 
 /* base of cloud */
