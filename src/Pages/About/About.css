@@ -86,29 +86,13 @@
     text-align: center;
 }
 .hobby-section {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: 0;
     position: relative;
-    z-index: 2;
+    z-index: 2; */
+    margin: auto;
 }
 
-.resume-content {
-    display: flex;    
-    align-items: flex-start;
-}
-
-.download {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
-    background: #715AFF;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 20px;
-}
-.download:hover {
-    color: white;
-    text-shadow: 1px 1px 5px #000000;
-}
-.download:active {
-    box-shadow: 1px 1px 5px #000000;
+.resume {
+    margin: auto;
 }
