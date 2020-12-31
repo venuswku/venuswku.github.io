@@ -7,7 +7,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function Contact() {
     return (
         <div className="contact">
-            <p className="heading">Contact</p>
+            <div className="bubble bubble1"></div>
+            <div className="bubble bubble2"></div>
+            <div className="bubble bubble3"></div>
+            <div className="bubble bubble4"></div>
+            <div className="bubble bubble5"></div>
+            <p className="heading contact-heading">Contact</p>
             <a href="mailto:venuswku@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-links">
                 <EmailRoundedIcon fontSize="large" className="contact-link-icon" />Email: venuswku@gmail.com
             </a>
