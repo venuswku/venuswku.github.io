@@ -21,7 +21,7 @@ function Contact() {
             <a href="https://github.com/venuswku" target="_blank" rel="noopener noreferrer" className="contact-links">
                 <GitHubIcon fontSize="large" className="contact-link-icon" />GitHub: venuswku
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" className="contact-links">
+            <a href="https://www.linkedin.com/in/venuswku" target="_blank" rel="noopener noreferrer" className="contact-links">
                 <LinkedInIcon fontSize="large" className="contact-link-icon" />LinkedIn: venuswku
             </a>
         </div>
