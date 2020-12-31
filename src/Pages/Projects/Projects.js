@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as OctopusBody } from '../../Assets/OctopusBody.svg';
 import { ReactComponent as OctopusLeftTentacle } from '../../Assets/OctopusLeftTentacle.svg';
 import { ReactComponent as OctopusRightTentacle } from '../../Assets/OctopusRightTentacle.svg';
+import PersonalWebsite from '../../Assets/PersonalWebsite.gif';
 import momGif from '../../Assets/Mom.gif';
 
 function Projects() {
@@ -18,11 +19,14 @@ function Projects() {
             </div>
             <p className="heading">Projects</p>
             <div className="project">
-                <p className="project-name">Personal Website</p>
-                <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
-                <div className="project-links">
-                    <NavLink exact to="/" className="project-link-button" target="_blank">Demo</NavLink>
-                    <a className="project-link-button" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
+                <img src={PersonalWebsite} alt="gif of my personal website" className="personal-website" />
+                <div className="project-text">
+                    <p className="project-name">Personal Website</p>
+                    <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
+                    <div className="project-links">
+                        <NavLink exact to="/" className="project-link-button" target="_blank">Demo</NavLink>
+                        <a className="project-link-button" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
+                    </div>
                 </div>
             </div>
             <p className="heading art-heading">Digital Art</p>

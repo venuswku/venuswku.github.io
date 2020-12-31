@@ -34,8 +34,19 @@
 }
 
 .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.personal-website {
+    width: 35%;
+    border-radius: 20px;
+}
+
+.project-text {
     color: rgba(255, 255, 255, 0.8);
-    width: 40%;
+    width: 30%;
     margin-left: 2%;
     text-align: center;
     position: relative;
