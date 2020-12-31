@@ -1,7 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
-import CodeRoundedIcon from '@material-ui/icons/CodeRounded';
+import GitHubIcon from '@material-ui/icons/GitHub';
+// import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Contact() {
     return (
@@ -11,7 +12,7 @@ function Contact() {
                 <EmailRoundedIcon fontSize="large" className="contact-link-icon" />Email: venuswku@gmail.com
             </a>
             <a href="https://github.com/venuswku" target="_blank" rel="noopener noreferrer" className="contact-links">
-                <CodeRoundedIcon fontSize="large" className="contact-link-icon" />GitHub: venuswku
+                <GitHubIcon fontSize="large" className="contact-link-icon" />GitHub: venuswku
             </a>
         </div>
     );
