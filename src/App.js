@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import ReactPlayer from 'react-player';
-import ScrollToTop from './Navigation/ScrollToTop';
-import NavigationBar from './Navigation/NavigationBar';
-import MenuDrawer from './Navigation/MenuDrawer';
-import Backdrop from './Navigation/Backdrop';
+import ScrollToTop from './Navigation/ScrollToTop/ScrollToTop';
+import NavigationBar from './Navigation/NavigationBar/NavigationBar';
+import MenuDrawer from './Navigation/MenuDrawer/MenuDrawer';
+import Backdrop from './Navigation/Backdrop/Backdrop';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
