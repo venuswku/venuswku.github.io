@@ -63,13 +63,25 @@
     100% {margin-left: 60px;}
 }
 
-.starfishy {
-    width: 80%;
-    height: 80%;
-    transform: scaleX(-1) rotate(60deg);
-    margin-left: 58%;
+.starfish-speech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: -3%;
+    margin-left: 65%;
     position: absolute;
     z-index: 0;
+}
+.starfishy {
+    width: 70%;
+    height: 70%;
+    transform: scaleX(-1) rotate(60deg);
+}
+.contact-speech-bubble {
+    width: 15%;
+    position: relative;
+    left: -65%;
 }
 
 .contact-links {

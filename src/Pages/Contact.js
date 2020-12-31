@@ -13,7 +13,10 @@ function Contact() {
             <div className="bubble bubble3"></div>
             <div className="bubble bubble4"></div>
             <div className="bubble bubble5"></div>
-            <Starfish className="starfishy" />
+            <div className="starfish-speech">
+                <Starfish className="starfishy" />
+                <div className="speech-bubble contact-speech-bubble">Feel free to contact me!</div>
+            </div>
             <p className="heading contact-heading">Contact</p>
             <a href="mailto:venuswku@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-links">
                 <EmailRoundedIcon fontSize="large" className="contact-link-icon" />Email: venuswku@gmail.com
