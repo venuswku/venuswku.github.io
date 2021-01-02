@@ -39,7 +39,7 @@
 }
 /* cloud animations */
 .cloud1 {
-    opacity: 0.125;
+    opacity: 0.2;
     transform: scale(0.5);
     position: relative;
     z-index: 0;     /* by default when transform is used */
@@ -55,7 +55,7 @@
     100% {left: 100%}
 }
 .cloud2 {
-    opacity: 0.19;
+    opacity: 0.3;
     transform: scale(0.75);
     position: relative;
     z-index: 0;     /* by default when transform is used */
