@@ -119,7 +119,6 @@
     background: rgba(49, 49, 218, 0.65);
     margin-top: -10%;
     animation: animateWave 5s ease-in-out infinite;
-    z-index: 0;     /* by default when transform is used */
 }
 @keyframes animateWave {
     0%, 100% {
