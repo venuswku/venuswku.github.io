@@ -13,11 +13,10 @@
     height: 100px;
     border-radius: 50px;
     position: relative;
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.05);
     opacity: 50%;
-    /* z-index: 0; */
-    /* ^ by default when transform is used */
+    z-index: 0;     /* by default when transform is used */
 }
 /* left clump of cloud */
 .cloud:before {
@@ -27,7 +26,7 @@
     position: absolute;
     top: -50px;
     left: 45px;
-    background: #fff;
+    background-color: #fff;
     content: '';
 }
 /* right clump of cloud */
@@ -38,7 +37,7 @@
     position: absolute;
     top: -75px;
     right: 40px;
-    background: #fff;
+    background-color: #fff;
     content: '';
 }
 /* cloud animations */
