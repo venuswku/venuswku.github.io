@@ -14,7 +14,6 @@
     border-radius: 50px;
     background-color: #fff;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.05);
-    opacity: 50%;
 }
 /* left clump of cloud */
 .cloud:before {
@@ -40,8 +39,8 @@
 }
 /* cloud animations */
 .cloud1 {
+    opacity: 12.5%;
     transform: scale(0.5);
-    opacity: 25%;
     position: relative;
     z-index: 0;     /* by default when transform is used */
     -webkit-animation: animateCloud1Initial 30s 1,animateCloud1Loop 60s linear 30s infinite;
@@ -56,8 +55,8 @@
     100% {left: 100%}
 }
 .cloud2 {
+    opacity: 19%;
     transform: scale(0.75);
-    opacity: 38%;
     position: relative;
     z-index: 0;     /* by default when transform is used */
     animation: animateCloud2 70s linear infinite;
@@ -67,6 +66,7 @@
     100% {margin-left: 100%;}
 }
 .cloud3 {
+    opacity: 50%;
     position: relative;
     z-index: 0;     /* by default when transform is used */
     animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
