@@ -19,7 +19,7 @@ function Projects() {
             </div>
             <p className="heading">Projects</p>
             <div className="project">
-                <img src={PersonalWebsite} alt="gif of my personal website" className="personal-website" />
+                <img src={PersonalWebsite} alt="gif of my personal website" className="project-gif" />
                 <div className="project-text">
                     <p className="project-name">Personal Website</p>
                     <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>

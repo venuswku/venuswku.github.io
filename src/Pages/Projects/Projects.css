@@ -39,21 +39,22 @@
     justify-content: center;
     align-items: center;
 }
-.personal-website {
+.project-gif {
     width: 35%;
     border-radius: 20px;
+    border: 5px solid #540364;
 }
 
 .project-text {
     color: rgba(255, 255, 255, 0.8);
-    width: 30%;
-    margin-left: 2%;
+    width: 35%;
+    margin-left: 3%;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 .project-name {
-    color: #5887FF;
+    color: #540364;
     font-size: larger;
     font-weight: 500;
 }
