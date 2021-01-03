@@ -25,9 +25,11 @@ function About() {
                 It's a nice way to visually express emotions and interactively connect with the people who look at my work.
             </div>
             <p className="heading" ref={resumeRef}>Resume</p>
-            <object data={Resume} type="application/pdf" width="100%" height="950px" className="resume">
-                alt: <a href={Resume} target="_blank" rel="noopener noreferrer">VenusResume.pdf</a>
-            </object>
+            <div className="resume">
+                <object data={Resume} type="application/pdf" width="100%" height="100%">
+                    <a href={Resume} target="_blank" rel="noopener noreferrer">VenusResume.pdf</a>
+                </object>
+            </div>
         </div>
     );
 }
