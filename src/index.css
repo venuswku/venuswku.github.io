@@ -24,3 +24,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* when display screen is less than or equal to 768 pixels wide */
+@media (max-width: 768px) {
+  body {
+    font-size: medium;
+  }
+}
