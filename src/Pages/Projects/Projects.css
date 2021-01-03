@@ -101,3 +101,40 @@ iframe {
     text-align: center;
     width: 60%;
 }
+
+/* when display screen is less than or equal to 768 pixels wide */
+@media (max-width: 768px) {
+    iframe {
+        width: 85%;
+        height: 85%;
+    }
+}
+
+/* when display screen is less than or equal to 600 pixels wide */
+@media (max-width: 600px) {
+    .project {
+        flex-direction: column;
+    }
+    .project-gif {
+        width: 85%;
+    }
+    .project-text {
+        width: 85%;
+        margin-left: 0;
+    }
+
+    .mom {
+        width: 70%;
+    }
+    .art-description {
+        width: 85%;
+    }
+}
+
+/* when display screen is less than or equal to 425 pixels wide */
+@media (max-width: 425px) {
+    .project-link-button {
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
