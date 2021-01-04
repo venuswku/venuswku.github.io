@@ -141,13 +141,52 @@
     .starfish-speech {
         top: 130px;
     }
-    .starfishy {
-        transform: scale(1.2) rotate(-60deg);
-    }
     .contact-speech-bubble {
         width: 10%;
         left: -62%;
         padding: 10px;
         border-radius: 10px;
+    }
+}
+
+/* when display screen is less than or equal to 560 pixels wide */
+@media (max-width: 560px) {
+    .starfish-speech {
+        top: 123px;
+        margin-left: 73%;
+    }
+    .starfishy {
+        transform: scale(2.2) rotate(-60deg);
+    }
+    .contact-speech-bubble {
+        width: 55%;
+        left: -92%;
+    }
+}
+
+/* when display screen is less than or equal to 425 pixels wide */
+@media (max-width: 425px) {
+    .starfish-speech {
+        top: 140px;
+        margin-left: 76%;
+    }
+    .contact-speech-bubble {
+        width: 70%;
+        left: -95%;
+    }
+}
+
+/* when display screen is less than or equal to 375 pixels wide */
+@media (max-width: 375px) {
+    .starfish-speech {
+        /* top: 140px; */
+        margin-left: 81%;
+    }
+    .starfishy {
+        transform: scale(3.2) rotate(-60deg);
+    }
+    .contact-speech-bubble {
+        width: 100%;
+        left: -102%;
     }
 }
