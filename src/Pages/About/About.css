@@ -106,7 +106,7 @@
     }
     .speech-bubble::before {
         border-width: 10px;
-        top: 35%;
+        top: 30%;
     }
     .about-speech-bubble {
         width: 50%;

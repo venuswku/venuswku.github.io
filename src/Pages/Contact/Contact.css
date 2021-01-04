@@ -1,5 +1,4 @@
 .contact {
-    padding-top: 65px;
     background: rgba(11, 17, 139, 0.75);
     height: 100vh;
     position: relative;
@@ -7,6 +6,7 @@
 }
 
 .contact-heading {
+    margin-top: 115px;
     position: relative;
     z-index: 2;
 }
@@ -68,9 +68,8 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin-top: -3%;
     margin-left: 65%;
-    position: absolute;
+    position: fixed;
     z-index: 0;
 }
 .starfishy {
@@ -103,6 +102,20 @@
     margin-right: 1%;
 }
 
+/* when display screen is less than or equal to 1024 pixels wide */
+@media (max-width: 1024px) {
+    .starfish-speech {
+        top: 60px;
+    }
+    .starfishy {
+        transform: scale(1.1) rotate(-60deg);
+    }
+    .contact-speech-bubble {
+        width: 12%;
+        left: -65%;
+    }
+}
+
 /* when display screen is less than or equal to 768 pixels wide */
 @media (max-width: 768px) {
     .bubble {
@@ -111,42 +124,30 @@
     }
 
     .starfish-speech {
-        position: fixed;
-        top: -320px;
-        /* margin-top: -45%; */
-        margin-left: 58%;
+        top: 100px;
+        margin-left: 65%;
     }
     .starfishy {
-        width: 1920px;
-        height: 1080px;
+        transform: scale(1.2) rotate(-60deg);
     }
     .contact-speech-bubble {
-        width: 35%;
-        left: -73%;
+        width: 13%;
+        left: -65%;
     }
 }
 
-/* when display screen is less than or equal to 600 pixels wide */
-@media (max-width: 600px) {
+/* when display screen is less than or equal to 680 pixels wide */
+@media (max-width: 680px) {
     .starfish-speech {
-        margin-top: -77%;
-        margin-left: 57%;
+        top: 130px;
+    }
+    .starfishy {
+        transform: scale(1.2) rotate(-60deg);
     }
     .contact-speech-bubble {
+        width: 10%;
+        left: -62%;
         padding: 10px;
         border-radius: 10px;
-    }
-}
-
-/* when display screen is less than or equal to 540 pixels wide */
-@media (max-width: 540px) {
-    .starfish-speech {
-        /* position: absolute;
-        top: 80px; */
-        margin-top: -75%;
-        margin-left: 58%;
-    }
-    .contact-speech-bubble {
-        /* left: -70%; */
     }
 }
