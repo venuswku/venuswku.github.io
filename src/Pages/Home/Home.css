@@ -257,6 +257,14 @@
     z-index: 1;
 }
 
+/* when display screen is less than or equal to 1024 pixels wide */
+@media (max-width: 1024px) {
+    .about-name {
+        margin-top: -4.5%;
+        margin-bottom: 5%;
+    }
+}
+
 /* when display screen is less than or equal to 768 pixels wide */
 @media (max-width: 768px) {
     .cloud {
@@ -283,12 +291,20 @@
         margin-top: -17%;
     }
 
-    .section-name {
-        font-size: large;
+    .sea-lion-body {
+        width: 30%;
+        height: 30%;
     }
+    .sea-lion-tail {
+        width: 7%;
+        height: 7%;
+        margin-top: -8.8%;
+        margin-left: -33%;
+    }
+
     .about-name {
-        margin-top: -4.4%;
-        margin-bottom: 4.6%;
+        margin-top: -5.8%;
+        margin-bottom: 7%;
     }
     .section-description {
         font-size: medium;
@@ -303,6 +319,22 @@
     }
     .intro-content {
         margin: 3% 0 13%;
+    }
+
+    .sea-lion-body {
+        width: 40%;
+        height: 40%;
+    }
+    .sea-lion-tail {
+        width: 9%;
+        height: 9%;
+        margin-top: -11%;
+        margin-left: -44.5%;
+    }
+
+    .about-name {
+        margin-top: -8.5%;
+        margin-bottom: 6%;
     }
 }
 
