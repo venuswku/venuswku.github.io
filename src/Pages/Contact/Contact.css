@@ -179,7 +179,6 @@
 /* when display screen is less than or equal to 375 pixels wide */
 @media (max-width: 375px) {
     .starfish-speech {
-        /* top: 140px; */
         margin-left: 81%;
     }
     .starfishy {

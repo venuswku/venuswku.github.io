@@ -271,6 +271,7 @@
     .cloud3 {
         animation: animateCloud3Initial 25s linear 1, animateCloud3Loop 32s linear infinite 22s;
     }
+
     .home-heading {
         font-size: 60px;
         margin-top: -270px;
@@ -280,6 +281,17 @@
     }
     .wave {
         margin-top: -17%;
+    }
+
+    .section-name {
+        font-size: large;
+    }
+    .about-name {
+        margin-top: -4.4%;
+        margin-bottom: 4.6%;
+    }
+    .section-description {
+        font-size: medium;
     }
 }
 
