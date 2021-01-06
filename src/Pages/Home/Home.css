@@ -37,6 +37,7 @@
     background-color: #fff;
     content: '';
 }
+
 /* cloud animations */
 .cloud1 {
     opacity: 0.2;
@@ -44,35 +45,105 @@
     position: relative;
     z-index: 0;     /* by default when transform is used */
     -webkit-animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
+    -moz-animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
+    -o-animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
     animation: animateCloud1Initial 30s 1, animateCloud1Loop 60s linear infinite 30s;
+}
+@-webkit-keyframes animateCloud1Initial {
+    0% {left: 60%}
+    100% {left: 100%}
+}
+@-moz-keyframes animateCloud1Initial {
+    0% {left: 60%}
+    100% {left: 100%}
+}
+@-o-keyframes animateCloud1Initial {
+    0% {left: 60%}
+    100% {left: 100%}
 }
 @keyframes animateCloud1Initial {
     0% {left: 60%}
+    100% {left: 100%}
+}
+@-webkit-keyframes animateCloud1Loop {
+    0% {left: -30%}
+    100% {left: 100%}
+}
+@-moz-keyframes animateCloud1Loop {
+    0% {left: -30%}
+    100% {left: 100%}
+}
+@-o-keyframes animateCloud1Loop {
+    0% {left: -30%}
     100% {left: 100%}
 }
 @keyframes animateCloud1Loop {
     0% {left: -30%}
     100% {left: 100%}
 }
+
 .cloud2 {
     opacity: 0.3;
     transform: scale(0.75);
     position: relative;
     z-index: 0;     /* by default when transform is used */
+    -webkit-animation: animateCloud2 70s linear infinite;
+    -moz-animation: animateCloud2 70s linear infinite;
+    -o-animation: animateCloud2 70s linear infinite;
     animation: animateCloud2 70s linear infinite;
+}
+@-webkit-keyframes animateCloud2 {
+    0% {margin-left: -50%;}
+    100% {margin-left: 100%;}
+}
+@-moz-keyframes animateCloud2 {
+    0% {margin-left: -50%;}
+    100% {margin-left: 100%;}
+}
+@-o-keyframes animateCloud2 {
+    0% {margin-left: -50%;}
+    100% {margin-left: 100%;}
 }
 @keyframes animateCloud2 {
     0% {margin-left: -50%;}
     100% {margin-left: 100%;}
 }
+
 .cloud3 {
     opacity: 0.5;
     position: relative;
     z-index: 0;     /* by default when transform is used */
+    -webkit-animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
+    -moz-animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
+    -o-animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
     animation: animateCloud3Initial 50s linear 1, animateCloud3Loop 65s linear infinite 45s;
+}
+@-webkit-keyframes animateCloud3Initial {
+    0% {margin-left: 10%;}
+    100% {margin-left: 150%;}
+}
+@-moz-keyframes animateCloud3Initial {
+    0% {margin-left: 10%;}
+    100% {margin-left: 150%;}
+}
+@-o-keyframes animateCloud3Initial {
+    0% {margin-left: 10%;}
+    100% {margin-left: 150%;}
 }
 @keyframes animateCloud3Initial {
     0% {margin-left: 10%;}
+    100% {margin-left: 150%;}
+}
+@-webkit-keyframes animateCloud3Loop {
+    0% {margin-left: -100%;}
+    100% {margin-left: 150%;}
+}
+@-moz-keyframes animateCloud3Loop {
+    0% {margin-left: -100%;}
+    100% {margin-left: 150%;}
+}
+@-o-keyframes animateCloud3Loop {
+    0% {margin-left: -100%;}
     100% {margin-left: 150%;}
 }
 @keyframes animateCloud3Loop {
@@ -118,7 +189,34 @@
     height: 250px;
     background: rgba(49, 49, 218, 0.65);
     margin-top: -10%;
+    -webkit-animation: animateWave 5s ease-in-out infinite;
+    -moz-animation: animateWave 5s ease-in-out infinite;
+    -o-animation: animateWave 5s ease-in-out infinite;
     animation: animateWave 5s ease-in-out infinite;
+}
+@-webkit-keyframes animateWave {
+    0%, 100% {
+        clip-path: polygon(0 76%, 13% 74%, 29% 75%, 44% 80%, 57% 86%, 71% 87%, 85% 87%, 100% 82%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 78%, 12% 85%, 23% 90%, 32% 91%, 49% 86%, 67% 79%, 83% 77%, 100% 79%, 100% 100%, 0% 100%);
+    }
+}
+@-moz-keyframes animateWave {
+    0%, 100% {
+        clip-path: polygon(0 76%, 13% 74%, 29% 75%, 44% 80%, 57% 86%, 71% 87%, 85% 87%, 100% 82%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 78%, 12% 85%, 23% 90%, 32% 91%, 49% 86%, 67% 79%, 83% 77%, 100% 79%, 100% 100%, 0% 100%);
+    }
+}
+@-o-keyframes animateWave {
+    0%, 100% {
+        clip-path: polygon(0 76%, 13% 74%, 29% 75%, 44% 80%, 57% 86%, 71% 87%, 85% 87%, 100% 82%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 78%, 12% 85%, 23% 90%, 32% 91%, 49% 86%, 67% 79%, 83% 77%, 100% 79%, 100% 100%, 0% 100%);
+    }
 }
 @keyframes animateWave {
     0%, 100% {
@@ -128,6 +226,7 @@
         clip-path: polygon(0 78%, 12% 85%, 23% 90%, 32% 91%, 49% 86%, 67% 79%, 83% 77%, 100% 79%, 100% 100%, 0% 100%);
     }
 }
+
 
 .website-guide {
     width: 100%;
@@ -151,18 +250,33 @@
     text-shadow: 1px 1px 5px #000000;
 }
 .about-section:hover .sea-lion-tail {
+    -webkit-animation: animateSeaLion 1s linear infinite;
+    -moz-animation: animateSeaLion 1s linear infinite;
+    -o-animation: animateSeaLion 1s linear infinite;
     animation: animateSeaLion 1s linear infinite;
 }
 .projects-section:hover .octopus-body {
+    -webkit-animation: animateOctopusBody 3s linear infinite;
+    -moz-animation: animateOctopusBody 3s linear infinite;
+    -o-animation: animateOctopusBody 3s linear infinite;
     animation: animateOctopusBody 3s linear infinite;
 }
 .projects-section:hover .octopus-left-tentacle {
+    -webkit-animation: animateOctopusLeftTentacle 3s linear infinite;
+    -moz-animation: animateOctopusLeftTentacle 3s linear infinite;
+    -o-animation: animateOctopusLeftTentacle 3s linear infinite;
     animation: animateOctopusLeftTentacle 3s linear infinite;
 }
 .projects-section:hover .octopus-right-tentacle {
+    -webkit-animation: animateOctopusRightTentacle 3s linear infinite;
+    -moz-animation: animateOctopusRightTentacle 3s linear infinite;
+    -o-animation: animateOctopusRightTentacle 3s linear infinite;
     animation: animateOctopusRightTentacle 3s linear infinite;
 }
 .contact-section:hover .starfish {
+    -webkit-animation: animateStarfish 1.5s linear infinite;
+    -moz-animation: animateStarfish 1.5s linear infinite;
+    -o-animation: animateStarfish 1.5s linear infinite;
     animation: animateStarfish 1.5s linear infinite;
 }
 
@@ -205,6 +319,69 @@
     height: 40%;
     margin-top: -4%;
 }
+@-webkit-keyframes animateOctopusBody {
+    50% {transform: translateY(-8%);}
+}
+@-webkit-keyframes animateOctopusLeftTentacle {
+    50% {transform: rotate(-20deg);}
+}
+@-webkit-keyframes animateOctopusRightTentacle {
+    50% {transform: rotate(20deg);}
+}
+@-webkit-keyframes animateStarfish {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(0deg);}
+    70% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+@-moz-keyframes animateSeaLion {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(-10deg);}
+    60% {transform: rotate(0deg);}
+    90% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+@-moz-keyframes animateOctopusBody {
+    50% {transform: translateY(-8%);}
+}
+@-moz-keyframes animateOctopusLeftTentacle {
+    50% {transform: rotate(-20deg);}
+}
+@-moz-keyframes animateOctopusRightTentacle {
+    50% {transform: rotate(20deg);}
+}
+@-moz-keyframes animateStarfish {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(0deg);}
+    70% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+@-o-keyframes animateSeaLion {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(-10deg);}
+    60% {transform: rotate(0deg);}
+    90% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+@-o-keyframes animateOctopusBody {
+    50% {transform: translateY(-8%);}
+}
+@-o-keyframes animateOctopusLeftTentacle {
+    50% {transform: rotate(-20deg);}
+}
+@-o-keyframes animateOctopusRightTentacle {
+    50% {transform: rotate(20deg);}
+}
+@-o-keyframes animateStarfish {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(0deg);}
+    70% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
 @keyframes animateSeaLion {
     0% {transform: rotate(0deg);}
     30% {transform: rotate(-10deg);}
@@ -278,12 +455,21 @@
         transform: scale(0.5);
     }
     .cloud1 {
+        -webkit-animation: animateCloud1Initial 15s 1, animateCloud1Loop 30s linear infinite 15s;
+        -moz-animation: animateCloud1Initial 15s 1, animateCloud1Loop 30s linear infinite 15s;
+        -o-animation: animateCloud1Initial 15s 1, animateCloud1Loop 30s linear infinite 15s;
         animation: animateCloud1Initial 15s 1, animateCloud1Loop 30s linear infinite 15s;
     }
     .cloud2 {
+        -webkit-animation: animateCloud2 35s linear infinite;
+        -moz-animation: animateCloud2 35s linear infinite;
+        -o-animation: animateCloud2 35s linear infinite;
         animation: animateCloud2 35s linear infinite;
     }
     .cloud3 {
+        -webkit-animation: animateCloud3Initial 25s linear 1, animateCloud3Loop 32s linear infinite 22s;
+        -moz-animation: animateCloud3Initial 25s linear 1, animateCloud3Loop 32s linear infinite 22s;
+        -o-animation: animateCloud3Initial 25s linear 1, animateCloud3Loop 32s linear infinite 22s;
         animation: animateCloud3Initial 25s linear 1, animateCloud3Loop 32s linear infinite 22s;
     }
 
