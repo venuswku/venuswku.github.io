@@ -53,7 +53,7 @@ function Projects() {
                 <p className="art-description">
                     Some of my mom's life memories~
                     <br/>Rotoscope animation created by tracing over a video of my mom picking up a plushie.
-                    <br/><span role="img" aria-label="mom">👩</span> Frames were hand-drawn using Adobe Photoshop and lots of imagination.
+                    <br/><span role="img" aria-label="mom">👩</span> Frames were hand-drawn using Adobe Photoshop and lots of imagination!
                 </p>
             </div>
         </div>
