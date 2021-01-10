@@ -38,7 +38,7 @@ const Home = () => {
                         <SeaLionBody className="animal sea-lion-body" />
                         <SeaLionTail className="animal sea-lion-tail" />
                         <div className="section-name about-name">About</div>
-                        <p className="section-description">My background and what I'm passionate about! Downloadable resume is provided at the bottom of this section.</p>
+                        <p className="section-description">My background and what I'm passionate about! Resume is provided at the bottom of this section.</p>
                     </NavLink>
                     <NavLink exact to="/projects" className="website-section projects-section">
                         <OctopusLeftTentacle className="animal octopus-left-tentacle" />
@@ -50,7 +50,7 @@ const Home = () => {
                     <NavLink exact to="/contact" className="website-section contact-section">
                         <Starfish className="animal starfish" />
                         <div className="section-name contact-name">Contact</div>
-                        <p className="section-description">How to contact me!</p>
+                        <p className="section-description">If you have any questions or just want to say hi, please contact me!</p>
                     </NavLink>
                 </div>
             </div>
