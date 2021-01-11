@@ -484,6 +484,7 @@
         margin-top: -17%;
     }
 
+    /* make sea animals infinitely animate for devices smaller than a tablet */
     .sea-lion-body {
         width: 30%;
         height: 30%;
@@ -493,28 +494,33 @@
         height: 7%;
         margin-top: -8.8%;
         margin-left: -33%;
+        animation: animateSeaLion 1s linear infinite;
     }
     .octopus-body {
         width: 31%;
         height: 31%;
         margin-top: -15.7%;
+        animation: animateOctopusBody 3s linear infinite;
     }
     .octopus-right-tentacle {
         width: 8%;
         height: 8%;
         margin-top: -8.4%;
         margin-left: 17%;
+        animation: animateOctopusRightTentacle 3s linear infinite;
     }
     .octopus-left-tentacle {
         width: 8%;
         height: 8%;
         margin-top: 7%;
         margin-left: -17%;
+        animation: animateOctopusLeftTentacle 3s linear infinite;
     }
     .starfish {
         width: 50%;
         height: 50%;
         margin-top: -5%;
+        animation: animateStarfish 1.5s linear infinite;
     }
 
     .about-name {
