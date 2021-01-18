@@ -37,22 +37,6 @@ export default function App() {
           <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
-      {/* <header className="App-header">
-        <p>
-          Welcome to Venus' website!
-          <ReactPlayer
-            url="https://soundcloud.com/bangtan/thankyouarmy2020"
-          />
-        </p>
-        <a
-          className="App-link"
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          my favorite website
-        </a>
-      </header> */}
     </div>
   );
 }
