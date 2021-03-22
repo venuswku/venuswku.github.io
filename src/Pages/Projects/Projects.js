@@ -20,6 +20,16 @@ function Projects() {
             </div>
             <p className="heading">Projects</p>
             <div className="project">
+                <div className="project-text">
+                    <p className="project-name">Perfect Gift</p>
+                    <p className="project-description">Provides gift suggestions for friends and family based on their interests or wishlist!</p>
+                    <div className="project-links">
+                        <a className="project-link-button" href="https://aws-frontend.d3i4pwwftbhh87.amplifyapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a className="project-link-button" href="https://github.com/venuswku/perfect-gift" target="_blank" rel="noopener noreferrer">Code</a>
+                    </div>
+                </div>
+            </div>
+            <div className="project">
                 <img src={PersonalWebsite} alt="gif of my personal website" className="project-gif" />
                 <div className="project-text">
                     <p className="project-name">Personal Website</p>
