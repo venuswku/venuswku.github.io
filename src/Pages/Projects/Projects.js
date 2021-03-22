@@ -3,6 +3,7 @@ import './Projects.css';
 import { ReactComponent as OctopusBody } from '../../Assets/OctopusBody.svg';
 import { ReactComponent as OctopusLeftTentacle } from '../../Assets/OctopusLeftTentacle.svg';
 import { ReactComponent as OctopusRightTentacle } from '../../Assets/OctopusRightTentacle.svg';
+import PerfectGift from '../../Assets/PerfectGiftLogo.svg';
 import PersonalWebsite from '../../Assets/PersonalWebsite.gif';
 import momGif from '../../Assets/Mom.gif';
 
@@ -12,8 +13,9 @@ const projects = [
         description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
         demo: "https://aws-frontend.d3i4pwwftbhh87.amplifyapp.com/",
         code: "https://github.com/venuswku/perfect-gift",
-        image: PersonalWebsite,
-        alt: "gif of Perfect Gift",
+        image: PerfectGift,
+        alt: "logo of Perfect Gift",
+        imageClass: "perfectGift",
     },
     {
         name: "Personal Website",
@@ -22,6 +24,7 @@ const projects = [
         code: "https://github.com/venuswku/venuswku.github.io",
         image: PersonalWebsite,
         alt: "gif of my personal website",
+        imageClass: "project-gif",
     },
 ];
 
@@ -37,9 +40,9 @@ function Projects() {
                 <OctopusRightTentacle className="right-tentacle" />
             </div>
             <p className="heading">Projects</p>
-            {projects.map(({name, description, demo, code, image, alt}) => {
+            {projects.map(({name, description, demo, code, image, alt, imageClass}) => {
                 return <div className="project">
-                    <img src={image} alt={alt} className="project-gif" />
+                    <img src={image} alt={alt} className={imageClass} />
                     <div className="project-text">
                         <p className="project-name">{name}</p>
                         <p className="project-description">{description}</p>

@@ -45,6 +45,9 @@
     border-radius: 20px;
     border: 5px solid #540364;
 }
+.perfectGift {
+    margin: 0 8%;
+}
 
 .project-text {
     color: rgba(255, 255, 255, 0.8);
