@@ -1,11 +1,29 @@
 import React from 'react';
 import './Projects.css';
-import { NavLink } from 'react-router-dom';
 import { ReactComponent as OctopusBody } from '../../Assets/OctopusBody.svg';
 import { ReactComponent as OctopusLeftTentacle } from '../../Assets/OctopusLeftTentacle.svg';
 import { ReactComponent as OctopusRightTentacle } from '../../Assets/OctopusRightTentacle.svg';
 import PersonalWebsite from '../../Assets/PersonalWebsite.gif';
 import momGif from '../../Assets/Mom.gif';
+
+const projects = [
+    {
+        name: "Perfect Gift",
+        description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
+        demo: "https://aws-frontend.d3i4pwwftbhh87.amplifyapp.com/",
+        code: "https://github.com/venuswku/perfect-gift",
+        image: PersonalWebsite,
+        alt: "gif of Perfect Gift",
+    },
+    {
+        name: "Personal Website",
+        description: "Online portfolio to display my projects and tell more information about me.",
+        demo: "https://venuswku.github.io/",
+        code: "https://github.com/venuswku/venuswku.github.io",
+        image: PersonalWebsite,
+        alt: "gif of my personal website",
+    },
+];
 
 function Projects() {
     return (
@@ -19,27 +37,19 @@ function Projects() {
                 <OctopusRightTentacle className="right-tentacle" />
             </div>
             <p className="heading">Projects</p>
-            <div className="project">
-                <div className="project-text">
-                    <p className="project-name">Perfect Gift</p>
-                    <p className="project-description">Provides gift suggestions for friends and family based on their interests or wishlist!</p>
-                    <div className="project-links">
-                        <a className="project-link-button" href="https://aws-frontend.d3i4pwwftbhh87.amplifyapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
-                        <a className="project-link-button" href="https://github.com/venuswku/perfect-gift" target="_blank" rel="noopener noreferrer">Code</a>
+            {projects.map(({name, description, demo, code, image, alt}) => {
+                return <div className="project">
+                    <img src={image} alt={alt} className="project-gif" />
+                    <div className="project-text">
+                        <p className="project-name">{name}</p>
+                        <p className="project-description">{description}</p>
+                        <div className="project-links">
+                            <a className="project-link-button" href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
+                            <a className="project-link-button" href={code} target="_blank" rel="noopener noreferrer">Code</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="project">
-                <img src={PersonalWebsite} alt="gif of my personal website" className="project-gif" />
-                <div className="project-text">
-                    <p className="project-name">Personal Website</p>
-                    <p className="project-description">Online portfolio to display my projects and tell more information about me.</p>
-                    <div className="project-links">
-                        <NavLink exact to="/" className="project-link-button" target="_blank">Demo</NavLink>
-                        <a className="project-link-button" href="https://github.com/venuswku/venuswku.github.io" target="_blank" rel="noopener noreferrer">Code</a>
-                    </div>
-                </div>
-            </div>
+                </div>;
+            })}
             <p className="heading art-heading">Digital Art</p>
             <div className="art">
                 <iframe title="video1" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
