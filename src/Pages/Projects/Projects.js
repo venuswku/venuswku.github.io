@@ -11,7 +11,7 @@ const projects = [
     {
         name: "Perfect Gift",
         description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
-        demo: "https://aws-frontend.d3i4pwwftbhh87.amplifyapp.com/",
+        demo: "https://theperfectgift.herokuapp.com/",
         code: "https://github.com/venuswku/perfect-gift",
         image: PerfectGift,
         alt: "logo of Perfect Gift",
