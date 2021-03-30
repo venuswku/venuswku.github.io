@@ -14,7 +14,7 @@ const projects = [
         demo: "https://theperfectgift.herokuapp.com/",
         code: "https://github.com/venuswku/perfect-gift",
         image: PerfectGift,
-        alt: "logo of Perfect Gift",
+        alt: "Perfect Gift logo",
         imageClass: "perfectGift",
     },
     {
@@ -47,8 +47,8 @@ function Projects() {
                         <p className="project-name">{name}</p>
                         <p className="project-description">{description}</p>
                         <div className="project-links">
-                            <a className="project-link-button" href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
-                            <a className="project-link-button" href={code} target="_blank" rel="noopener noreferrer">Code</a>
+                            <a className="project-link-button" href={demo} title={name} target="_blank" rel="noopener noreferrer">Demo</a>
+                            <a className="project-link-button" href={code} title="GitHub Repository" target="_blank" rel="noopener noreferrer">Code</a>
                         </div>
                     </div>
                 </div>;
