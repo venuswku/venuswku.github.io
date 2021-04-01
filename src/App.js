@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 import ScrollToTop from './Navigation/ScrollToTop/ScrollToTop';
 import NavigationBar from './Navigation/NavigationBar/NavigationBar';
 import MenuDrawer from './Navigation/MenuDrawer/MenuDrawer';
@@ -25,7 +25,7 @@ export default function App() {
   
   return (
     <div>
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <NavigationBar drawerButtonClickHandler={showDrawer} />
         <MenuDrawer show={drawerOpen} closeDrawerClickHandler={closeDrawer} />
@@ -36,7 +36,7 @@ export default function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
