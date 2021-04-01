@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import ScrollToTop from './Navigation/ScrollToTop/ScrollToTop';
 import NavigationBar from './Navigation/NavigationBar/NavigationBar';
 import MenuDrawer from './Navigation/MenuDrawer/MenuDrawer';
