@@ -712,14 +712,14 @@
 }
 
 /* when display screen is greater than or equal to 2000 pixels wide */
-@media screen and (min-width: 2000px) {
+@media (min-width: 2000px) {
   .wave {
     margin-top: -7%;
   }
 }
 
 /* when display screen is less than or equal to 1024 pixels wide */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .about-name {
     margin-top: -4.5%;
     margin-bottom: 5%;
@@ -727,7 +727,7 @@
 }
 
 /* when display screen is less than or equal to 768 pixels wide */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .cloud {
     transform: scale(0.5);
   }
@@ -826,7 +826,7 @@
 }
 
 /* when display screen is less than or equal to 425 pixels wide */
-@media screen and (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 425px) {
   .cloud {
     transform: scale(0.5);
   }
@@ -926,7 +926,7 @@
 }
 
 /* when display screen is less than or equal to 375 pixels wide */
-@media screen and (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px) {
   .cloud {
     transform: scale(0.5);
   }
@@ -1026,7 +1026,7 @@
 }
 
 /* when display screen is less than or equal to 320 pixels wide */
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .cloud {
     transform: scale(0.5);
   }
