@@ -711,23 +711,23 @@
   z-index: 1;
 }
 
-/* when display screen is greater than or equal to 2000 pixels wide */
+/* when display screen is greater than or equal to 2000 pixels wide (large laptops) */
 @media (min-width: 2000px) {
   .wave {
     margin-top: -7%;
   }
 }
 
-/* when display screen is less than or equal to 1024 pixels wide */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* when display screen is less than or equal to 1024 pixels wide (laptops) */
+@media (max-width: 1024px) {
   .about-name {
     margin-top: -4.5%;
     margin-bottom: 5%;
   }
 }
 
-/* when display screen is less than or equal to 768 pixels wide */
-@media (min-width: 426px) and (max-width: 768px) {
+/* when display screen is less than or equal to 768 pixels wide (tablets) */
+@media (max-width: 768px) {
   .cloud {
     transform: scale(0.5);
   }
@@ -760,13 +760,9 @@
 
   .home-heading {
     font-size: 60px;
-    margin-top: -270px;
   }
   .intro-content {
     margin: 3% 0 8%;
-  }
-  .wave {
-    margin-top: -17%;
   }
 
   /* make sea animals infinitely animate for devices smaller than a tablet */
@@ -777,35 +773,60 @@
   .sea-lion-tail {
     width: 7%;
     height: 7%;
-    margin-top: -8.8%;
     margin-left: -33%;
     animation: animateSeaLion 1s linear infinite;
   }
   .octopus-body {
     width: 31%;
     height: 31%;
-    margin-top: -15.7%;
     animation: animateOctopusBody 3s linear infinite;
   }
   .octopus-right-tentacle {
     width: 8%;
     height: 8%;
-    margin-top: -8.4%;
     margin-left: 17%;
     animation: animateOctopusRightTentacle 3s linear infinite;
   }
   .octopus-left-tentacle {
     width: 8%;
     height: 8%;
-    margin-top: 7%;
     margin-left: -17%;
     animation: animateOctopusLeftTentacle 3s linear infinite;
   }
   .starfish {
     width: 50%;
     height: 50%;
-    margin-top: -5%;
     animation: animateStarfish 1.5s linear infinite;
+  }
+
+  .section-description {
+    font-size: medium;
+  }
+}
+
+/* when display screen is less than or equal to 1024 pixels high (tablets) */
+@media (max-height: 1024px) {
+  .home-heading {
+    margin-top: -270px;
+  }
+  .wave {
+    margin-top: -17%;
+  }
+
+  .sea-lion-tail {
+    margin-top: -8.8%;
+  }
+  .octopus-body {
+    margin-top: -15.7%;
+  }
+  .octopus-right-tentacle {
+    margin-top: -8.4%;
+  }
+  .octopus-left-tentacle {
+    margin-top: 7%;
+  }
+  .starfish {
+    margin-top: -5%;
   }
 
   .about-name {
@@ -820,56 +841,18 @@
     margin-top: -15%;
     margin-bottom: 7%;
   }
-  .section-description {
-    font-size: medium;
-  }
 }
 
-/* when display screen is less than or equal to 425 pixels wide */
-@media (min-width: 376px) and (max-width: 425px) {
-  .cloud {
-    transform: scale(0.5);
-  }
-  .cloud1 {
-    -webkit-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -moz-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -o-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-  }
-  .cloud2 {
-    -webkit-animation: animateCloud2 35s linear infinite;
-    -moz-animation: animateCloud2 35s linear infinite;
-    -o-animation: animateCloud2 35s linear infinite;
-    animation: animateCloud2 35s linear infinite;
-  }
-  .cloud3 {
-    -webkit-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -moz-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -o-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-  }
-
+/* when display screen is less than or equal to 425 pixels wide (large mobiles) */
+@media (max-width: 425px) {
   .home-heading {
-    font-size: 60px;
     margin-top: -220px;
     margin-bottom: 8%;
   }
   .intro-content {
     margin: 3% 0 13%;
   }
-  .wave {
-    margin-top: -17%;
-  }
 
-  /* make sea animals infinitely animate for devices smaller than a tablet */
   .sea-lion-body {
     width: 40%;
     height: 40%;
@@ -879,33 +862,28 @@
     height: 9%;
     margin-top: -11%;
     margin-left: -44.5%;
-    animation: animateSeaLion 1s linear infinite;
   }
   .octopus-body {
     width: 40%;
     height: 40%;
     margin-top: -18.7%;
-    animation: animateOctopusBody 3s linear infinite;
   }
   .octopus-right-tentacle {
     width: 10%;
     height: 10%;
     margin-top: -10.5%;
     margin-left: 22%;
-    animation: animateOctopusRightTentacle 3s linear infinite;
   }
   .octopus-left-tentacle {
     width: 10%;
     height: 10%;
     margin-top: 8%;
     margin-left: -22%;
-    animation: animateOctopusLeftTentacle 3s linear infinite;
   }
   .starfish {
     width: 65%;
     height: 65%;
     margin-top: -6.5%;
-    animation: animateStarfish 1.5s linear infinite;
   }
 
   .about-name {
@@ -920,207 +898,60 @@
     margin-top: -20.5%;
     margin-bottom: 6%;
   }
-  .section-description {
-    font-size: medium;
-  }
 }
 
-/* when display screen is less than or equal to 375 pixels wide */
-@media (min-width: 321px) and (max-width: 375px) {
-  .cloud {
-    transform: scale(0.5);
-  }
-  .cloud1 {
-    -webkit-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -moz-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -o-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-  }
-  .cloud2 {
-    -webkit-animation: animateCloud2 35s linear infinite;
-    -moz-animation: animateCloud2 35s linear infinite;
-    -o-animation: animateCloud2 35s linear infinite;
-    animation: animateCloud2 35s linear infinite;
-  }
-  .cloud3 {
-    -webkit-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -moz-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -o-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-  }
+/* when display screen is less than or equal to 930 pixels high (large mobiles) */
+@media (max-height: 930px) {
+}
 
+/* when display screen is less than or equal to 375 pixels wide (medium mobiles) */
+@media (max-width: 375px) {
   .home-heading {
-    font-size: 60px;
     margin-top: -250px;
-    margin-bottom: 8%;
-  }
-  .intro-content {
-    margin: 3% 0 13%;
   }
   .wave {
     margin-top: -26%;
   }
 
-  /* make sea animals infinitely animate for devices smaller than a tablet */
-  .sea-lion-body {
-    width: 40%;
-    height: 40%;
-  }
-  .sea-lion-tail {
-    width: 9%;
-    height: 9%;
-    margin-top: -11%;
-    margin-left: -44.5%;
-    animation: animateSeaLion 1s linear infinite;
-  }
-  .octopus-body {
-    width: 40%;
-    height: 40%;
-    margin-top: -18.7%;
-    animation: animateOctopusBody 3s linear infinite;
-  }
-  .octopus-right-tentacle {
-    width: 10%;
-    height: 10%;
-    margin-top: -10.5%;
-    margin-left: 22%;
-    animation: animateOctopusRightTentacle 3s linear infinite;
-  }
-  .octopus-left-tentacle {
-    width: 10%;
-    height: 10%;
-    margin-top: 8%;
-    margin-left: -22%;
-    animation: animateOctopusLeftTentacle 3s linear infinite;
-  }
-  .starfish {
-    width: 65%;
-    height: 65%;
-    margin-top: -6.5%;
-    animation: animateStarfish 1.5s linear infinite;
-  }
-
   .about-name {
     margin-top: -9%;
-    margin-bottom: 6%;
   }
   .projects-name {
     margin-top: -26.3%;
-    margin-bottom: 19.5%;
   }
   .contact-name {
     margin-top: -20%;
     margin-bottom: 5%;
   }
-  .section-description {
-    font-size: medium;
-  }
 }
 
-/* when display screen is less than or equal to 320 pixels wide */
-@media (max-width: 320px) {
-  .cloud {
-    transform: scale(0.5);
-  }
-  .cloud1 {
-    -webkit-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -moz-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    -o-animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-    animation: animateCloud1Initial 15s 1,
-      animateCloud1Loop 30s linear infinite 15s;
-  }
-  .cloud2 {
-    -webkit-animation: animateCloud2 35s linear infinite;
-    -moz-animation: animateCloud2 35s linear infinite;
-    -o-animation: animateCloud2 35s linear infinite;
-    animation: animateCloud2 35s linear infinite;
-  }
-  .cloud3 {
-    -webkit-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -moz-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    -o-animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-    animation: animateCloud3Initial 25s linear 1,
-      animateCloud3Loop 32s linear infinite 22s;
-  }
+/* when display screen is less than or equal to 568 pixels high (medium mobiles) */
+@media (max-height: 568px) {
+}
 
+/* when display screen is less than or equal to 320 pixels wide (small mobiles) */
+@media (max-width: 320px) {
   .home-heading {
     font-size: 50px;
     margin-top: -280px;
     margin-bottom: 5%;
   }
-  .intro-content {
-    margin: 3% 0 13%;
-  }
   .wave {
     margin-top: -40%;
   }
 
-  /* make sea animals infinitely animate for devices smaller than a tablet */
-  .sea-lion-body {
-    width: 40%;
-    height: 40%;
-  }
-  .sea-lion-tail {
-    width: 9%;
-    height: 9%;
-    margin-top: -11%;
-    margin-left: -44.5%;
-    animation: animateSeaLion 1s linear infinite;
-  }
-  .octopus-body {
-    width: 40%;
-    height: 40%;
-    margin-top: -18.7%;
-    animation: animateOctopusBody 3s linear infinite;
-  }
-  .octopus-right-tentacle {
-    width: 10%;
-    height: 10%;
-    margin-top: -10.5%;
-    margin-left: 22%;
-    animation: animateOctopusRightTentacle 3s linear infinite;
-  }
-  .octopus-left-tentacle {
-    width: 10%;
-    height: 10%;
-    margin-top: 8%;
-    margin-left: -22%;
-    animation: animateOctopusLeftTentacle 3s linear infinite;
-  }
-  .starfish {
-    width: 65%;
-    height: 65%;
-    margin-top: -6.5%;
-    animation: animateStarfish 1.5s linear infinite;
-  }
-
   .about-name {
     margin-top: -10%;
-    margin-bottom: 6%;
   }
   .projects-name {
     margin-top: -27.3%;
-    margin-bottom: 19.5%;
   }
   .contact-name {
     margin-top: -20.5%;
     margin-bottom: 3%;
   }
-  .section-description {
-    font-size: medium;
-  }
+}
+
+/* when display screen is less than or equal to 568 pixels high (small mobiles) */
+@media (max-height: 568px) {
 }
