@@ -760,9 +760,13 @@
 
   .home-heading {
     font-size: 60px;
+    margin-top: -270px;
   }
   .intro-content {
     margin: 3% 0 8%;
+  }
+  .wave {
+    margin-top: -17%;
   }
 
   /* make sea animals infinitely animate for devices smaller than a tablet */
@@ -773,60 +777,35 @@
   .sea-lion-tail {
     width: 7%;
     height: 7%;
+    margin-top: -8.8%;
     margin-left: -33%;
     animation: animateSeaLion 1s linear infinite;
   }
   .octopus-body {
     width: 31%;
     height: 31%;
+    margin-top: -15.7%;
     animation: animateOctopusBody 3s linear infinite;
   }
   .octopus-right-tentacle {
     width: 8%;
     height: 8%;
+    margin-top: -8.4%;
     margin-left: 17%;
     animation: animateOctopusRightTentacle 3s linear infinite;
   }
   .octopus-left-tentacle {
     width: 8%;
     height: 8%;
+    margin-top: 7%;
     margin-left: -17%;
     animation: animateOctopusLeftTentacle 3s linear infinite;
   }
   .starfish {
     width: 50%;
     height: 50%;
-    animation: animateStarfish 1.5s linear infinite;
-  }
-
-  .section-description {
-    font-size: medium;
-  }
-}
-
-/* when display screen is less than or equal to 1024 pixels high (tablets) */
-@media (max-height: 1024px) {
-  .home-heading {
-    margin-top: -270px;
-  }
-  .wave {
-    margin-top: -17%;
-  }
-
-  .sea-lion-tail {
-    margin-top: -8.8%;
-  }
-  .octopus-body {
-    margin-top: -15.7%;
-  }
-  .octopus-right-tentacle {
-    margin-top: -8.4%;
-  }
-  .octopus-left-tentacle {
-    margin-top: 7%;
-  }
-  .starfish {
     margin-top: -5%;
+    animation: animateStarfish 1.5s linear infinite;
   }
 
   .about-name {
@@ -840,6 +819,9 @@
   .contact-name {
     margin-top: -15%;
     margin-bottom: 7%;
+  }
+  .section-description {
+    font-size: medium;
   }
 }
 
