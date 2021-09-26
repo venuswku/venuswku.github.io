@@ -882,10 +882,6 @@
   }
 }
 
-/* when display screen is less than or equal to 930 pixels high (large mobiles) */
-@media (max-height: 930px) {
-}
-
 /* when display screen is less than or equal to 375 pixels wide (medium mobiles) */
 @media (max-width: 375px) {
   .home-heading {
@@ -905,10 +901,6 @@
     margin-top: -20%;
     margin-bottom: 5%;
   }
-}
-
-/* when display screen is less than or equal to 568 pixels high (medium mobiles) */
-@media (max-height: 568px) {
 }
 
 /* when display screen is less than or equal to 320 pixels wide (small mobiles) */
@@ -932,8 +924,4 @@
     margin-top: -20.5%;
     margin-bottom: 3%;
   }
-}
-
-/* when display screen is less than or equal to 568 pixels high (small mobiles) */
-@media (max-height: 568px) {
 }
