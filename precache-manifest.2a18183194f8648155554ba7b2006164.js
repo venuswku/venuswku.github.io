@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dc1f8ec45739f8c90b9b7814fce34be",
+    "revision": "c245f9c58f88ac7c980cf2f0498338dc",
     "url": "/index.html"
   },
   {
-    "revision": "8686b86a0929fc4f7371",
+    "revision": "f455859a62ebfd270b94",
     "url": "/static/css/main.260e985e.chunk.css"
   },
   {
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f7c823ff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8686b86a0929fc4f7371",
-    "url": "/static/js/main.143c3fe7.chunk.js"
+    "revision": "f455859a62ebfd270b94",
+    "url": "/static/js/main.5293de49.chunk.js"
   },
   {
     "revision": "6ec1ab48d225aa86ebde",
     "url": "/static/js/runtime-main.72037fc3.js"
+  },
+  {
+    "revision": "f61ec29f97a1be1befd76914f3a79a78",
+    "url": "/static/media/Ku_Venus_Resume.f61ec29f.pdf"
   },
   {
     "revision": "4546f6043dc3fd25b3a02c1feab6e970",
@@ -58,9 +62,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32a44a573bce1dd99f78de2c5b740168",
     "url": "/static/media/Starfish.32a44a57.svg"
-  },
-  {
-    "revision": "a5485d6e6afd8a533834c5578cd5882f",
-    "url": "/static/media/VenusResume.a5485d6e.pdf"
   }
 ]);
