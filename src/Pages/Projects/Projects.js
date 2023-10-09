@@ -9,12 +9,21 @@ import momGif from '../../Assets/Mom.gif';
 
 const projects = [
     {
+        name: "CoastSnap",
+        description: "Pilot community coastline monitoring project sponsored by the City of Santa Cruz and the United States Geological Survey.",
+        demo: "https://coastsnap.ucsc.edu/",
+        code: "https://github.com/venuswku/CoastSnap",
+        image: "https://raw.githubusercontent.com/venuswku/CoastSnap/main/src/images/README/AboutPage.gif",
+        alt: "Gif of About Page from CoastSnap in Santa Cruz Website",
+        imageClass: "project-gif",
+    },
+    {
         name: "Perfect Gift",
         description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
         demo: "https://theperfectgift.herokuapp.com/",
         code: "https://github.com/venuswku/perfect-gift",
         image: PerfectGift,
-        alt: "Perfect Gift logo",
+        alt: "Perfect Gift Logo",
         imageClass: "perfectGift",
     },
     {
@@ -23,7 +32,7 @@ const projects = [
         demo: "https://venuswku.github.io/",
         code: "https://github.com/venuswku/venuswku.github.io",
         image: PersonalWebsite,
-        alt: "gif of my personal website",
+        alt: "Gif of My Personal Website",
         imageClass: "project-gif",
     },
 ];
