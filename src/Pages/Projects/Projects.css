@@ -96,6 +96,10 @@ iframe {
     position: relative;
     z-index: 1;
 }
+.baby {
+    width: 30%;
+    margin-top: 5%;
+}
 .mom {
     width: 40%;
     margin-top: 5%;

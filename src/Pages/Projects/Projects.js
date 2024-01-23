@@ -5,6 +5,7 @@ import { ReactComponent as OctopusLeftTentacle } from '../../Assets/OctopusLeftT
 import { ReactComponent as OctopusRightTentacle } from '../../Assets/OctopusRightTentacle.svg';
 import PerfectGift from '../../Assets/PerfectGiftLogo.svg';
 import PersonalWebsite from '../../Assets/PersonalWebsite.gif';
+import dancingBabyGif from '../../Assets/DancingBabyRotoscope.gif';
 import momGif from '../../Assets/Mom.gif';
 
 const projects = [
@@ -20,7 +21,7 @@ const projects = [
     {
         name: "Perfect Gift",
         description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
-        demo: "https://theperfectgift.herokuapp.com/",
+        demo: "https://venuswku.github.io/perfect-gift",
         code: "https://github.com/venuswku/perfect-gift",
         image: PerfectGift,
         alt: "Perfect Gift Logo",
@@ -64,7 +65,13 @@ function Projects() {
             })}
             <p className="heading art-heading">Digital Art</p>
             <div className="art">
-                <iframe title="video1" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src={dancingBabyGif} alt="gif of dancing baby" className="baby" />
+                <p className="art-description">
+                    Happy dance! <span role="img" aria-label="baby-dancing">👶🕺</span>
+                    <br/><a href="https://raw.githubusercontent.com/venuswku/venuswku.github.io/src/Assets/DancingBabyReference.gif" title="Dancing Baby Reference" target="_blank" rel="noopener noreferrer">This baby</a> perfectly captures how I feel whenever something exciting happens. He's so adorable that I had to draw him!
+                    <br/>Each frame was hand-drawn using Adobe Photoshop.
+                </p>
+                <iframe title="video3" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p className="art-description">
                     Food for Thought <span role="img" aria-label="thinking-face">🤔</span>
                     <br/>Based on some thoughts I had when I was young.
@@ -76,7 +83,7 @@ function Projects() {
                     Since he speeds through the safety instructions, I hope this also helps people who couldn't hear him clearly.
                     <br/><span role="img" aria-label="airplane">✈</span> Created using Adobe After Effects and Photoshop.
                 </p>
-                <iframe title="video3" width="560" height="315" src="https://www.youtube.com/embed/YAVaJB_MkUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="video1" width="560" height="315" src="https://www.youtube.com/embed/YAVaJB_MkUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p className="art-description">
                     The unique variety of eerie sound effects mixed into the song's instrumentals inspired me to represent the music in an abstract way. <span role="img" aria-label="music-note">🎵</span>
                     <br/>It was challenging to omit the use of symbolism, but I think using abstract shapes and patterns really enhanced the song's composition.
