@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c245f9c58f88ac7c980cf2f0498338dc",
+    "revision": "ffd7a0906d14112bd1c6fe6767c7a343",
     "url": "/index.html"
   },
   {
-    "revision": "f455859a62ebfd270b94",
-    "url": "/static/css/main.260e985e.chunk.css"
+    "revision": "6ab315377d6ed0ce92c7",
+    "url": "/static/css/main.92b89486.chunk.css"
   },
   {
-    "revision": "9e1223bd330562fd64c5",
-    "url": "/static/js/2.f7c823ff.chunk.js"
+    "revision": "70de934fcae0eb8094bc",
+    "url": "/static/js/2.2c6ba4fe.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.f7c823ff.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2c6ba4fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f455859a62ebfd270b94",
-    "url": "/static/js/main.5293de49.chunk.js"
+    "revision": "6ab315377d6ed0ce92c7",
+    "url": "/static/js/main.a724880a.chunk.js"
   },
   {
     "revision": "6ec1ab48d225aa86ebde",
     "url": "/static/js/runtime-main.72037fc3.js"
+  },
+  {
+    "revision": "3b6145ea9e706e949db99725a8806b87",
+    "url": "/static/media/DancingBabyRotoscope.3b6145ea.gif"
   },
   {
     "revision": "f61ec29f97a1be1befd76914f3a79a78",
