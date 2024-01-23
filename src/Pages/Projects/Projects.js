@@ -50,7 +50,6 @@ function Projects() {
                 <OctopusRightTentacle className="right-tentacle" />
                 <OctopusLeftTentacle className="left-tentacle" />
                 <OctopusRightTentacle className="right-tentacle" />
-                <OctopusLeftTentacle className="left-tentacle" />
             </div>
             <p className="heading">Projects</p>
             {projects.map(({name, description, demo, code, image, alt, imageClass}) => {
