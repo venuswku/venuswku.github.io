@@ -48,6 +48,9 @@ function Projects() {
                 <OctopusRightTentacle className="right-tentacle" />
                 <OctopusLeftTentacle className="left-tentacle" />
                 <OctopusRightTentacle className="right-tentacle" />
+                <OctopusLeftTentacle className="left-tentacle" />
+                <OctopusRightTentacle className="right-tentacle" />
+                <OctopusLeftTentacle className="left-tentacle" />
             </div>
             <p className="heading">Projects</p>
             {projects.map(({name, description, demo, code, image, alt, imageClass}) => {
@@ -68,7 +71,7 @@ function Projects() {
                 <img src={dancingBabyGif} alt="gif of dancing baby" className="baby" />
                 <p className="art-description">
                     Happy dance! <span role="img" aria-label="baby-dancing">👶🕺</span>
-                    <br/><a href="https://raw.githubusercontent.com/venuswku/venuswku.github.io/src/Assets/DancingBabyReference.gif" title="Dancing Baby Reference" target="_blank" rel="noopener noreferrer">This baby</a> perfectly captures how I feel whenever something exciting happens. He's so adorable that I had to draw him!
+                    <br/><a href="https://github.com/venuswku/venuswku.github.io/blob/970387156406fa7e9c913d7a66805e313aa7b160/src/Assets/DancingBabyReference.gif" title="Dancing Baby Reference" target="_blank" rel="noopener noreferrer">This baby</a> perfectly captures how I feel whenever something exciting happens. He's so adorable that I had to draw him!
                     <br/>Each frame was hand-drawn using Adobe Photoshop.
                 </p>
                 <iframe title="video3" width="560" height="315" src="https://www.youtube.com/embed/ih4mPJ6KJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
