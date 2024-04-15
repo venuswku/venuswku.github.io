@@ -41,7 +41,7 @@ const projects = [
     },
     {
         name: "Compass",
-        description: "Chat-based web platform facilitating large group mentoring sessions. This project is used for research purposes at the Tech4Good Lab in UC Santa Cruz, so the code is not publically available.",
+        description: "Chat-based web platform facilitating large group mentoring sessions. This project is used for research purposes at UC Santa Cruz's Tech4Good Lab, which requires a request for accessing the code.",
         website: "https://compass-ucsc.firebaseapp.com",
         image: CompassLogo,
         alt: "Compass Logo",
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         name: "Relate",
-        description: "Collects community feedback through interactive online activities. This project is used for research purposes at the Tech4Good Lab in UC Santa Cruz, so the code is not publically available.",
+        description: "Collects community feedback through interactive online activities. This project is used for research purposes at UC Santa Cruz's Tech4Good Lab, which requires a request for accessing the code.",
         website: "https://relate-dev-36d63.firebaseapp.com/",
         image: RelateWebsite,
         alt: "Relate Website",
