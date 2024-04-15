@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5cd317c.chunk.css",
-    "main.js": "/static/js/main.7e60c4ac.chunk.js",
-    "main.js.map": "/static/js/main.7e60c4ac.chunk.js.map",
+    "main.css": "/static/css/main.d5982c65.chunk.css",
+    "main.js": "/static/js/main.eddd9372.chunk.js",
+    "main.js.map": "/static/js/main.eddd9372.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.72037fc3.js",
     "runtime-main.js.map": "/static/js/runtime-main.72037fc3.js.map",
-    "static/js/2.2c6ba4fe.chunk.js": "/static/js/2.2c6ba4fe.chunk.js",
-    "static/js/2.2c6ba4fe.chunk.js.map": "/static/js/2.2c6ba4fe.chunk.js.map",
+    "static/js/2.3f407d35.chunk.js": "/static/js/2.3f407d35.chunk.js",
+    "static/js/2.3f407d35.chunk.js.map": "/static/js/2.3f407d35.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7493b65b06e9f09ef03354ca6433b4d1.js": "/precache-manifest.7493b65b06e9f09ef03354ca6433b4d1.js",
+    "precache-manifest.ab252806ed0afdf468bd2d2d05731148.js": "/precache-manifest.ab252806ed0afdf468bd2d2d05731148.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d5cd317c.chunk.css.map": "/static/css/main.d5cd317c.chunk.css.map",
-    "static/js/2.2c6ba4fe.chunk.js.LICENSE.txt": "/static/js/2.2c6ba4fe.chunk.js.LICENSE.txt",
+    "static/css/main.d5982c65.chunk.css.map": "/static/css/main.d5982c65.chunk.css.map",
+    "static/js/2.3f407d35.chunk.js.LICENSE.txt": "/static/js/2.3f407d35.chunk.js.LICENSE.txt",
+    "static/media/CompassLogo.svg": "/static/media/CompassLogo.416d03d1.svg",
     "static/media/DancingBabyRotoscope.gif": "/static/media/DancingBabyRotoscope.3b6145ea.gif",
     "static/media/Ku_Venus_Resume.pdf": "/static/media/Ku_Venus_Resume.f61ec29f.pdf",
     "static/media/Mom.gif": "/static/media/Mom.4546f604.gif",
@@ -20,14 +21,15 @@
     "static/media/OctopusRightTentacle.1d849759.svg": "/static/media/OctopusRightTentacle.1d849759.svg",
     "static/media/PerfectGiftLogo.svg": "/static/media/PerfectGiftLogo.3b8531fd.svg",
     "static/media/PersonalWebsite.gif": "/static/media/PersonalWebsite.e5513f36.gif",
+    "static/media/RelateWebsite.svg": "/static/media/RelateWebsite.aabe5821.svg",
     "static/media/SeaLionBody.a5879c26.svg": "/static/media/SeaLionBody.a5879c26.svg",
     "static/media/SeaLionTail.1e0efe0d.svg": "/static/media/SeaLionTail.1e0efe0d.svg",
     "static/media/Starfish.32a44a57.svg": "/static/media/Starfish.32a44a57.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.72037fc3.js",
-    "static/js/2.2c6ba4fe.chunk.js",
-    "static/css/main.d5cd317c.chunk.css",
-    "static/js/main.7e60c4ac.chunk.js"
+    "static/js/2.3f407d35.chunk.js",
+    "static/css/main.d5982c65.chunk.css",
+    "static/js/main.eddd9372.chunk.js"
   ]
 }
