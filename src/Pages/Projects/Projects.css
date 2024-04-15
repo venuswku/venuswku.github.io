@@ -45,8 +45,13 @@
     border-radius: 20px;
     border: 5px solid #540364;
 }
-.perfectGift {
+.perfectGift, .compassLogo {
+    width: 15%;
     margin: 0 8%;
+}
+.relateWebsite {
+    width: 25%;
+    margin: 0 5%;
 }
 
 .project-text {
@@ -116,6 +121,21 @@ iframe {
         width: 85%;
         height: 85%;
     }
+    .project-link-button {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .perfectGift, .compassLogo {
+        width: 25%;
+    }
+    .relateWebsite {
+        width: 35%;
+    }
+
+    .baby {
+        width: 40%;
+    }
 }
 
 /* when display screen is less than or equal to 600 pixels wide */
@@ -131,6 +151,16 @@ iframe {
         margin-left: 0;
     }
 
+    .perfectGift, .compassLogo {
+        width: 35%;
+    }
+    .relateWebsite {
+        width: 45%;
+    }
+
+    .baby {
+        width: 50%;
+    }
     .mom {
         width: 70%;
     }
@@ -141,8 +171,7 @@ iframe {
 
 /* when display screen is less than or equal to 425 pixels wide */
 @media (max-width: 425px) {
-    .project-link-button {
-        padding: 10px;
-        border-radius: 10px;
+    .baby {
+        width: 60%;
     }
 }

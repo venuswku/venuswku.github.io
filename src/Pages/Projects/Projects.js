@@ -5,6 +5,8 @@ import { ReactComponent as OctopusLeftTentacle } from '../../Assets/OctopusLeftT
 import { ReactComponent as OctopusRightTentacle } from '../../Assets/OctopusRightTentacle.svg';
 import PerfectGift from '../../Assets/PerfectGiftLogo.svg';
 import PersonalWebsite from '../../Assets/PersonalWebsite.gif';
+import CompassLogo from '../../Assets/CompassLogo.svg';
+import RelateWebsite from '../../Assets/RelateWebsite.svg';
 import dancingBabyGif from '../../Assets/DancingBabyRotoscope.gif';
 import momGif from '../../Assets/Mom.gif';
 
@@ -12,7 +14,7 @@ const projects = [
     {
         name: "CoastSnap",
         description: "Pilot community coastline monitoring project sponsored by the City of Santa Cruz and the United States Geological Survey.",
-        demo: "https://coastsnap.ucsc.edu/",
+        website: "https://coastsnap.ucsc.edu/",
         code: "https://github.com/venuswku/CoastSnap",
         image: "https://raw.githubusercontent.com/venuswku/CoastSnap/main/src/images/README/AboutPage.gif",
         alt: "Gif of About Page from CoastSnap in Santa Cruz Website",
@@ -21,7 +23,8 @@ const projects = [
     {
         name: "Perfect Gift",
         description: "Provides gift suggestions for friends and family based on their interests or wishlist!",
-        demo: "https://venuswku.github.io/perfect-gift",
+        website: "https://venuswku.github.io/perfect-gift",
+        demo: "http://www.youtube.com/watch?v=WDyAbhEy0fc",
         code: "https://github.com/venuswku/perfect-gift",
         image: PerfectGift,
         alt: "Perfect Gift Logo",
@@ -30,11 +33,27 @@ const projects = [
     {
         name: "Personal Website",
         description: "Online portfolio to display my projects and tell more information about me.",
-        demo: "https://venuswku.github.io/",
+        website: "https://venuswku.github.io/",
         code: "https://github.com/venuswku/venuswku.github.io",
         image: PersonalWebsite,
         alt: "Gif of My Personal Website",
         imageClass: "project-gif",
+    },
+    {
+        name: "Compass",
+        description: "Chat-based web platform facilitating large group mentoring sessions. This project is used for research purposes at the Tech4Good Lab in UC Santa Cruz, so the code is not publically available.",
+        website: "https://compass-ucsc.firebaseapp.com",
+        image: CompassLogo,
+        alt: "Compass Logo",
+        imageClass: "compassLogo",
+    },
+    {
+        name: "Relate",
+        description: "Collects community feedback through interactive online activities. This project is used for research purposes at the Tech4Good Lab in UC Santa Cruz, so the code is not publically available.",
+        website: "https://relate-dev-36d63.firebaseapp.com/",
+        image: RelateWebsite,
+        alt: "Relate Website",
+        imageClass: "relateWebsite",
     },
 ];
 
@@ -52,15 +71,20 @@ function Projects() {
                 <OctopusRightTentacle className="right-tentacle" />
             </div>
             <p className="heading">Projects</p>
-            {projects.map(({name, description, demo, code, image, alt, imageClass}) => {
+            {projects.map(({name, description, website, demo, code, image, alt, imageClass}) => {
                 return <div className="project">
                     <img src={image} alt={alt} className={imageClass} />
                     <div className="project-text">
                         <p className="project-name">{name}</p>
                         <p className="project-description">{description}</p>
                         <div className="project-links">
-                            <a className="project-link-button" href={demo} title={name} target="_blank" rel="noopener noreferrer">Demo</a>
-                            <a className="project-link-button" href={code} title="GitHub Repository" target="_blank" rel="noopener noreferrer">Code</a>
+                            <a className="project-link-button" href={website} title={name} target="_blank" rel="noopener noreferrer">Website</a>
+                            {demo &&
+                                <a className="project-link-button" href={demo} title="Video Demo" target="_blank" rel="noopener noreferrer">Demo</a>
+                            }
+                            {code &&
+                                <a className="project-link-button" href={code} title="GitHub Repository" target="_blank" rel="noopener noreferrer">Code</a>
+                            }
                         </div>
                     </div>
                 </div>;
